@@ -140,8 +140,18 @@ python Lora/evaluate.py --adapter runs/qlora_v1/model --four-bit --output runs/q
 По умолчанию небольшой русский `cointegrated/rubert-tiny2` с поддержкой до 2048 токенов:
 
 ```bash
-python ner_classifier/train.py --epochs 5 --output runs/encoder_v1
-python ner_classifier/evaluate.py --models runs/encoder_v1 --output runs/encoder_v1_test
+python ner_classifier/train.py --epochs 5 --output runs/encoder_v2
+python ner_classifier/evaluate.py --models runs/encoder_v2 --split validation --output runs/encoder_v2_validation
+```
+
+Веса O/B/I и классов параметра по умолчанию вычисляются только по **train** (`--class-weighting balanced`) и сохраняются в `class_weights.json`. На каждой валидации считаются exact NER F1 и macro-F1 классификатора. Лучший checkpoint выбирается по максимальному соответствующему **validation F1** и восстанавливается перед сохранением. LoRA/Qwen продолжают использовать свой прежний выбор по validation loss.
+
+После обучения автоматически появляются `train_diagnostic_metrics.json` / `train_diagnostic_predictions.jsonl` и `validation_best_metrics.json` / `validation_best_predictions.jsonl` для каждой задачи. В них видны предсказания лучшего checkpoint на train и validation; диагностический train F1 не является оценкой обобщения. Подробности формулы весов и метрик — в `ner_classifier/README.md`.
+
+`ner_classifier/evaluate.py` по умолчанию использует validation, поддерживает `--split train` для диагностики. Когда подбор настроек закончен, запустите итоговый тест явно:
+
+```bash
+python ner_classifier/evaluate.py --models runs/encoder_v2 --split test --output runs/encoder_v2_test
 ```
 
 Можно обучить / проверить только одну задачу: `--task ner` или `--task classifier`. Для другой модели передайте `--model`; `--max-length` не должен превышать её лимит.
@@ -185,7 +195,7 @@ python qwen/evaluate.py --model runs/qwen_full_v1/model --output runs/qwen_full_
 
 - `metrics.json`: accuracy, macro-F1, exact match, invalid rate; распределения/ID выборок, параметры и версии библиотек.
 - `field_metrics.csv`: precision/recall/F1/support каждого класса каждого поля; UTF-8 BOM, разделитель `;`.
-- `predictions.jsonl`: предсказание каждого тестового анамнеза, исходный ответ LLM или NER-фрагменты, ошибки. У генеративных моделей также время ответа.
+- `predictions.jsonl`: предсказание каждого анамнеза выбранной выборки, исходный ответ LLM или NER-фрагменты, ошибки. У генеративных моделей также время ответа.
 - `errors.json`: невалидный JSON, HTTP/другие ошибки. Ошибки считаются ошибками, не удаляются из теста.
 - NER: exact character-span precision/recall/F1, entity-token detection F1, token accuracy, количество непредставимых границ и `alignment_report.json`. При `--task ner` CSV классификатора не создаётся.
 
@@ -196,7 +206,7 @@ Macro-F1 считается по фиксированному словарю к�
 Сравнить значения на одном тесте:
 
 ```bash
-python compare.py runs/qwen_baseline/metrics.json runs/lora_v1_test/metrics.json runs/encoder_v1_test/metrics.json --output reports/comparison.json
+python compare.py runs/qwen_baseline/metrics.json runs/lora_v1_test/metrics.json runs/encoder_v2_test/metrics.json --output reports/comparison.json
 ```
 
 Скрипт проверяет совпадение исходного SHA-256, split и тестовых ID. Эксперименты с разными наборами не сравниваются автоматически. Тип/квантование LLM фиксируйте в названии запуска; сервер LM Studio и локальный Transformers не гарантируют побитно одинаковые результаты.

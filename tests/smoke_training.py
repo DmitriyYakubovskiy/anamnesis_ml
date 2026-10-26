@@ -40,8 +40,23 @@ def main():
             rows.append({'id':str(i),'document_id':'doc'+str(i),'text':text,'completed':1,'columns':[{'code':'AG','name':'Гипертония','data_type':'bool','active':True,'value':v,'state':'no_data' if v is None else 'value'}],'annotations':spans})
         source=temp/'input.json';dump(source,rows);data=temp/'data';prepare(source,data)
         common=['--data',data,'--epochs','1','--max-steps','1','--batch','1']
+        # A corrupt test file must not affect fitting/selection/diagnostics.
+        test_file=data/'test.jsonl';test_bytes=test_file.read_bytes();test_file.write_text('THIS IS NOT JSON')
         run('ner_classifier/train.py',*common,'--model',bert,'--output',temp/'enc')
-        run('ner_classifier/evaluate.py','--data',data,'--models',temp/'enc','--output',temp/'enc_eval')
+        assert test_file.read_text()=='THIS IS NOT JSON'
+        test_file.write_bytes(test_bytes)
+        for task,metric in [('ner','eval_ner_f1'),('classifier','eval_macro_f1')]:
+            dest=temp/'enc'/'AG'/task
+            report=json.loads((dest/'training_metrics.json').read_text())
+            assert report['config']['selection_metric']==metric
+            assert any(metric in row for row in report['train'])
+            for split in ['train_diagnostic','validation_best']:
+                assert (dest/(split+'_metrics.json')).exists()
+                assert (dest/(split+'_predictions.jsonl')).exists()
+            assert json.loads((dest/'class_weights.json').read_text())['source_split']=='train'
+        run('ner_classifier/evaluate.py','--data',data,'--models',temp/'enc','--output',temp/'enc_train','--split','train')
+        assert json.loads((temp/'enc_train/metrics.json').read_text())['metadata']['diagnostic_only'] is True
+        run('ner_classifier/evaluate.py','--data',data,'--models',temp/'enc','--output',temp/'enc_eval','--split','test')
         run('Lora/train.py',*common,'--model',llm,'--output',temp/'lora','--accumulation','1','--rank','2')
         run('Lora/evaluate.py','--data',data,'--adapter',temp/'lora/model','--output',temp/'lora_eval','--max-new-tokens','2')
         run('Lora/merge.py','--adapter',temp/'lora/model','--output',temp/'merged')

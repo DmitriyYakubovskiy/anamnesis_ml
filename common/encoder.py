@@ -61,9 +61,12 @@ def train():
     p.add_argument('--max-length',type=int,default=2048)
     p.add_argument('--seed',type=int,default=42)
     p.add_argument('--max-steps',type=int,default=-1)
+    p.add_argument('--class-weighting',choices=['balanced','none'],default='balanced')
     a=p.parse_args()
-    from transformers import AutoTokenizer, AutoConfig, AutoModelForTokenClassification, AutoModelForSequenceClassification, DataCollatorForTokenClassification, DataCollatorWithPadding, Trainer, set_seed
+    from transformers import AutoTokenizer, AutoConfig, AutoModelForTokenClassification, AutoModelForSequenceClassification, DataCollatorForTokenClassification, DataCollatorWithPadding, set_seed
+    from common.encoder_training import class_balance, metric_function, summarize_predictions, argmax_logits, weighted_trainer_class, audit_training_parts
     data=Path(a.data);schema=load(data/'schema.json');parts={s:read_jsonl(data/f'{s}.jsonl') for s in ['train','validation']}
+    audit_training_parts(parts)
     tokenizer=AutoTokenizer.from_pretrained(a.model,revision=a.revision,use_fast=True)
     if not tokenizer.is_fast:
         raise ValueError('NER needs a fast tokenizer with offsets')
@@ -78,12 +81,13 @@ def train():
             set_seed(a.seed)
             label_names=['O','B-'+code,'I-'+code] if task=='ner' else [key(v) for v in col['values']]
             label2id={v:i for i,v in enumerate(label_names)}
-            datasets,alignment={},[]
+            datasets,alignment,offsets_by_split={},[],{}
             for s,rows in parts.items():
-                examples=[]
+                examples=[];offsets_by_split[s]=[]
                 for r in rows:
                     enc=tokenize_checked(tokenizer,r['text'],a.max_length)
                     offsets=enc.pop('offset_mapping')
+                    offsets_by_split[s].append(offsets)
                     if task=='ner':
                         labels,expanded=bio_labels(offsets,[x for x in r['spans'] if x['label']==code])
                         alignment.extend({'id':r['id'],'split':s,**x} for x in expanded)
@@ -95,12 +99,37 @@ def train():
             model=cls.from_pretrained(a.model,revision=a.revision,num_labels=len(label_names),id2label=dict(enumerate(label_names)),label2id=label2id,ignore_mismatched_sizes=True)
             dest=out/code/task;dest.mkdir(parents=True)
             collator=DataCollatorForTokenClassification(tokenizer) if task=='ner' else DataCollatorWithPadding(tokenizer)
-            trainer=Trainer(model=model,args=training_args(dest,a.epochs,a.lr,a.batch,1,a.seed,a.max_steps),
-                train_dataset=datasets['train'],eval_dataset=datasets['validation'],data_collator=collator,processing_class=tokenizer)
-            trainer.train()
-            config={**vars(a),'task':task,'column':col,'base_commit':getattr(model.config,'_commit_hash',None),'source_sha256':load(data/'manifest.json')['source_sha256']}
+            balance,weights=class_balance(datasets['train'],label_names,task,a.class_weighting=='balanced')
+            dump(dest/'class_weights.json',balance)
+            if balance['missing_classes']:
+                print('WARNING: no train targets for classes:',balance['missing_classes'])
+            selection_metric='ner_f1' if task=='ner' else 'macro_f1'
+            args=training_args(dest,a.epochs,a.lr,a.batch,1,a.seed,a.max_steps)
+            args.metric_for_best_model='eval_'+selection_metric
+            args.greater_is_better=True
+            TrainerClass=weighted_trainer_class()
+            trainer=TrainerClass(model=model,args=args,class_weights=weights,
+                train_dataset=datasets['train'],eval_dataset=datasets['validation'],data_collator=collator,processing_class=tokenizer,
+                compute_metrics=metric_function(parts['validation'],offsets_by_split['validation'],col,task),
+                preprocess_logits_for_metrics=argmax_logits)
+            trainer.train()  # load_best_model_at_end restores the validation-F1 winner.
+            config={**vars(a),'task':task,'column':col,'base_commit':getattr(model.config,'_commit_hash',None),
+                    'source_sha256':load(data/'manifest.json')['source_sha256'],'selection_metric':args.metric_for_best_model,
+                    'selection_split':'validation','best_validation_f1':trainer.state.best_metric,'class_balance':balance}
+            for split,prefix in [('train','train_diagnostic'),('validation','validation_best')]:
+                trainer.compute_metrics=metric_function(parts[split],offsets_by_split[split],col,task)
+                prediction=trainer.predict(datasets[split],metric_key_prefix=prefix)
+                flat,details,examples=summarize_predictions(prediction.predictions,prediction.label_ids,
+                    parts[split],offsets_by_split[split],col,task)
+                dump(dest/f'{prefix}_metrics.json',{'split':split,'diagnostic_only':split=='train',
+                    'checkpoint':trainer.state.best_model_checkpoint,'metrics':flat,'details':details,
+                    'trainer_metrics':prediction.metrics})
+                jsonl(dest/f'{prefix}_predictions.jsonl',examples)
             save_training(trainer,tokenizer,dest,config)
             dump(dest/'alignment_report.json',alignment)
+            del trainer,model
+            import gc
+            gc.collect()
     dump(out/'run_config.json',vars(a))
     dump(out/'schema.json',schema)
 
@@ -111,7 +140,7 @@ def evaluate():
     p.add_argument('--models',default=str(ROOT/'runs/encoder'))
     p.add_argument('--output',default=str(ROOT/'runs/encoder_eval'))
     p.add_argument('--task',choices=['both','ner','classifier'],default='both')
-    p.add_argument('--split',choices=['validation','test'],default='test')
+    p.add_argument('--split',choices=['train','validation','test'],default='validation',help='Train is diagnostic only; test is for the final comparison')
     p.add_argument('--max-length',type=int,default=2048)
     a=p.parse_args()
     import torch
@@ -166,6 +195,6 @@ def evaluate():
         metrics['ner_evaluated_tokens']=len(token_gold)
         metrics['ner_unrepresentable_boundaries']=len(alignment)
     metrics['record_errors']=sum(bool(r['errors']) for r in items)
-    save_metrics(out,metrics,{**vars(a),'versions':versions(),'seconds':time.perf_counter()-started,'manifest':load(data/'manifest.json')})
+    save_metrics(out,metrics,{**vars(a),'versions':versions(),'seconds':time.perf_counter()-started,'manifest':load(data/'manifest.json'),'diagnostic_only':a.split=='train'})
     dump(out/'errors.json',[r for r in items if r['errors']])
     dump(out/'alignment_report.json',alignment)
