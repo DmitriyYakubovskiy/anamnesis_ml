@@ -6,7 +6,7 @@ import time
 from common.data import ROOT, load, read_jsonl, jsonl, dump, key
 from common.prompts import messages
 from common.metrics import parse_answer, value_metrics, save_metrics
-from common.runtime import DEFAULT_LLM, precision, new_output, training_args, save_training, versions
+from common.runtime import DEFAULT_LLM, precision, new_output, training_args, save_training, versions, timed_run, timed_phase
 
 
 def sft_example(tokenizer, row, schema, max_length):
@@ -27,6 +27,7 @@ class SFTCollator:
         return {key: torch.tensor([x[key]+[self.pad if key == 'input_ids' else -100 if key == 'labels' else 0]*(n-len(x[key])) for x in features]) for key in ['input_ids','attention_mask','labels']}
 
 
+@timed_run('train')
 def train(mode):
     p = argparse.ArgumentParser()
     p.add_argument('--data', default=str(ROOT/('Lora' if mode == 'lora' else 'qwen')/'data'))
@@ -48,6 +49,7 @@ def train(mode):
         p.error('Plain Qwen requires no training. For optional full SFT use --confirm-full-finetune (high memory usage).')
     if mode == 'full' and a.four_bit:
         p.error('Four-bit training is supported only for LoRA')
+    out = new_output(a.output)
     import torch
     from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, set_seed, BitsAndBytesConfig
     set_seed(a.seed)
@@ -77,10 +79,10 @@ def train(mode):
         model.print_trainable_parameters()
     else:
         model.gradient_checkpointing_enable()
-    out = new_output(a.output)
     trainer = Trainer(model=model, args=training_args(out,a.epochs,a.lr,a.batch,a.accumulation,a.seed,a.max_steps),
                       train_dataset=datasets['train'], eval_dataset=datasets['validation'], data_collator=SFTCollator(tokenizer), processing_class=tokenizer)
-    result = trainer.train()
+    with timed_phase('fit_and_validation', backend=mode):
+        result = trainer.train()
     config = {**vars(a), 'mode': mode, 'base_commit': base_commit, 'source_sha256': load(data/'manifest.json')['source_sha256']}
     # PEFT config's revision is used later to load exactly the same base.
     if mode == 'lora':
@@ -137,6 +139,7 @@ def api_generator(base_url, model, timeout=180):
     return generate
 
 
+@timed_run('evaluate')
 def evaluate(folder):
     p=argparse.ArgumentParser()
     p.add_argument('--data',default=str(ROOT/folder/'data'))
@@ -157,18 +160,20 @@ def evaluate(folder):
         if candidate and (Path(candidate)/'schema.json').exists() and load(Path(candidate)/'schema.json') != schema:
             raise ValueError('Model schema differs from evaluation data')
     out=new_output(a.output)
-    generator=api_generator(a.base_url,a.model) if a.base_url else local_generator(a.model,a.revision,a.adapter,a.max_length,a.max_new_tokens,a.four_bit)
+    with timed_phase('model_load', backend='api' if a.base_url else 'transformers'):
+        generator=api_generator(a.base_url,a.model) if a.base_url else local_generator(a.model,a.revision,a.adapter,a.max_length,a.max_new_tokens,a.four_bit)
     predictions=[];started=time.perf_counter()
-    for r in rows:
-        t=time.perf_counter();item={'id':r['id'],'prediction':None,'raw':'','error':None}
-        try:
-            item['raw']=generator(r['text'],schema)
-            item['prediction']=parse_answer(item['raw'],schema)
-        except Exception as e:
-            item['error']=f'{type(e).__name__}: {e}'
-        item['seconds']=time.perf_counter()-t
-        predictions.append(item)
-        jsonl(out/'predictions.jsonl',predictions)
+    with timed_phase('inference', backend='api' if a.base_url else 'transformers', samples=len(rows)):
+        for r in rows:
+            t=time.perf_counter();item={'id':r['id'],'prediction':None,'raw':'','error':None}
+            try:
+                item['raw']=generator(r['text'],schema)
+                item['prediction']=parse_answer(item['raw'],schema)
+            except Exception as e:
+                item['error']=f'{type(e).__name__}: {e}'
+            item['seconds']=time.perf_counter()-t
+            predictions.append(item)
+            jsonl(out/'predictions.jsonl',predictions)
     metrics=value_metrics(rows,predictions,schema)
     save_metrics(out,metrics,{**vars(a),'versions':versions(),'seconds':time.perf_counter()-started,'model_info':generator.model_info,'manifest':load(data/'manifest.json')})
     dump(out/'errors.json',[r for r in predictions if r['error']])

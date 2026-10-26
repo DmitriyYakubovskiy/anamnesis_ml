@@ -256,3 +256,15 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tests/smoke_training.py
 - RuBERT tiny2: https://huggingface.co/cointegrated/rubert-tiny2
 - PyTorch installation: https://pytorch.org/get-started/locally/
 - llama.cpp conversion: https://github.com/ggml-org/llama.cpp
+
+
+## Время обучения и оценки
+
+Все команды `train.py` и `evaluate.py` в Lora, qwen и ner_classifier (оба backend) автоматически сохраняют `<output>/timing.json` и печатают `TIME ... seconds`.
+
+- `total_seconds`: полное wall-clock время тела команды — разбор аргументов, ленивые импорты, чтение данных, загрузка/скачивание модели, работа, диагностика и экспорт результатов. Запуск интерпретатора и импорты модулей до входа в функцию, а также финальная запись самого отчёта времени не включены.
+- `phases`: `fit_and_validation` — обучение с валидацией и выбором checkpoint; при оценке `model_load` — загрузка модели, `inference` — обработка выборки с постобработкой. Для NER и классификатора этапы имеют `task` и `column`. У TF-IDF время обучения охватывает все четыре проверяемых кандидата. Этапы не покрывают весь overhead; их сумма может быть меньше total.
+- Время указано в секундах; `started_at` / `finished_at` — ISO 8601 UTC; `status` — running/completed/failed/cancelled. При обычном исключении после принятия output сохраняется failed; при Ctrl+C — cancelled. При принудительном завершении процесса может остаться running. При ошибке до создания output файл не создаётся; существующий run не перезаписывается.
+- В evaluate тот же отчёт дублируется в `metrics.json → metadata.timing`; в обучении LoRA/Qwen — в корневом `training_metrics.json → timing`, у hybrid — в `validation_summary.json → timing`. У transformer NER общий отчёт находится в корне run в `timing.json`, отдельные fit-этапы — в его phases.
+
+Прежние поля `metadata.seconds`, `train_runtime` и время отдельных ответов LLM сохранены для совместимости; их границы измерения отличаются. Для новых сравнений используйте одинаковые поля из timing.json, одинаковую выборку, оборудование и режим кэша. `total_seconds` при первом скачивании нельзя напрямую сравнивать с запуском из кэша. Для API model_load измеряет создание клиента; загрузка модели на сервере отдельно не измеряется, а inference включает сетевую задержку. Эти замеры являются временем реального запуска, а не чистым GPU-бенчмарком.

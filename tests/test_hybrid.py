@@ -67,7 +67,7 @@ def test_spacy_alignment_changes_only_training_copy():
     assert examples[0].reference.ents[0].start_char==0
 
 
-def test_hybrid_train_never_reads_test_file(tmp_path):
+def test_hybrid_train_never_reads_test_file(tmp_path, monkeypatch):
     pytest.importorskip('spacy')
     data=tmp_path/'data';data.mkdir()
     train=sample_rows();val=sample_rows('val')
@@ -78,11 +78,22 @@ def test_hybrid_train_never_reads_test_file(tmp_path):
     (data/'test.jsonl').write_text('NOT JSON')
     dump(data/'schema.json',[COL]);dump(data/'manifest.json',{'source_sha256':'synthetic','splits':{'train':[r['id'] for r in train],'validation':[r['id'] for r in val]}})
     out=tmp_path/'models'
-    train_hybrid(SimpleNamespace(data=str(data),output=str(out),epochs=2,seed=42,task='both',backend='hybrid'))
+    from common.encoder import train, evaluate
+    monkeypatch.setattr(sys,'argv',['train.py','--backend','hybrid','--data',str(data),'--output',str(out),'--epochs','2'])
+    train()
     assert (data/'test.jsonl').read_text()=='NOT JSON'
     assert load(out/'validation_summary.json')['test_evaluated'] is False
-    evaluate_hybrid(SimpleNamespace(data=str(data),models=str(out),output=str(tmp_path/'evaluation'),split='validation',task='both'))
+    timing=load(out/'timing.json')
+    assert timing['operation']=='train' and timing['status']=='completed'
+    assert {p['task'] for p in timing['phases']}=={'ner','classifier'}
+    assert load(out/'validation_summary.json')['timing']==timing
+    monkeypatch.setattr(sys,'argv',['evaluate.py','--data',str(data),'--models',str(out),'--output',str(tmp_path/'evaluation'),'--split','validation'])
+    evaluate()
     assert load(tmp_path/'evaluation/metrics.json')['n']==6
+    timing=load(tmp_path/'evaluation/timing.json')
+    assert timing['operation']=='evaluate' and timing['status']=='completed'
+    assert {p['name'] for p in timing['phases']}=={'model_load','inference'}
+    assert load(tmp_path/'evaluation/metrics.json')['metadata']['timing']==timing
     for task in ['ner','classifier']:
         assert (out/'AG'/task/'train_diagnostic_metrics.json').exists()
 

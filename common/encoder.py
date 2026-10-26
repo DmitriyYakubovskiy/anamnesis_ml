@@ -4,7 +4,7 @@ from pathlib import Path
 import time
 from common.data import ROOT, load, read_jsonl, dump, jsonl, key
 from common.metrics import value_metrics, span_metrics, save_metrics
-from common.runtime import DEFAULT_ENCODER, new_output, training_args, save_training, versions
+from common.runtime import DEFAULT_ENCODER, new_output, training_args, save_training, versions, timed_run, timed_phase
 
 
 def tokenize_checked(tokenizer, text, max_length):
@@ -48,6 +48,7 @@ def decode_bio(ids, offsets):
     return result
 
 
+@timed_run('train')
 def train():
     p=argparse.ArgumentParser()
     p.add_argument('--data',default=str(ROOT/'ner_classifier/data'))
@@ -68,6 +69,7 @@ def train():
     if a.backend=='hybrid':
         from common.hybrid import train_hybrid
         return train_hybrid(a)
+    out=new_output(a.output)
     from transformers import AutoTokenizer, AutoConfig, AutoModelForTokenClassification, AutoModelForSequenceClassification, DataCollatorForTokenClassification, DataCollatorWithPadding, set_seed
     from common.encoder_training import class_balance, metric_function, summarize_predictions, argmax_logits, weighted_trainer_class, audit_training_parts
     data=Path(a.data);schema=load(data/'schema.json');parts={s:read_jsonl(data/f'{s}.jsonl') for s in ['train','validation']}
@@ -78,7 +80,6 @@ def train():
     base_config=AutoConfig.from_pretrained(a.model,revision=a.revision)
     if a.max_length>getattr(base_config,'max_position_embeddings',a.max_length):
         p.error('--max-length exceeds encoder position embeddings')
-    out=new_output(a.output)
     tasks=['ner','classifier'] if a.task=='both' else [a.task]
     for col in schema:
         code=col['code']
@@ -118,7 +119,8 @@ def train():
                 train_dataset=datasets['train'],eval_dataset=datasets['validation'],data_collator=collator,processing_class=tokenizer,
                 compute_metrics=metric_function(parts['validation'],offsets_by_split['validation'],col,task),
                 preprocess_logits_for_metrics=argmax_logits)
-            trainer.train()  # load_best_model_at_end restores the validation-F1 winner.
+            with timed_phase('fit_and_validation', backend='transformer', column=code, task=task):
+                trainer.train()  # Restores the validation-F1 winner.
             config={**vars(a),'task':task,'column':col,'base_commit':getattr(model.config,'_commit_hash',None),
                     'source_sha256':load(data/'manifest.json')['source_sha256'],'selection_metric':args.metric_for_best_model,
                     'selection_split':'validation','best_validation_f1':trainer.state.best_metric,'best_selection_key':trainer.best_selection_key,'class_balance':balance}
@@ -140,6 +142,7 @@ def train():
     dump(out/'schema.json',schema)
 
 
+@timed_run('evaluate')
 def evaluate():
     p=argparse.ArgumentParser()
     p.add_argument('--data',default=str(ROOT/'ner_classifier/data'))
@@ -167,32 +170,34 @@ def evaluate():
         code=col['code']
         for task in tasks:
             path=Path(a.models)/code/task/'model'
-            tokenizer=AutoTokenizer.from_pretrained(path,use_fast=True)
-            cls=AutoModelForTokenClassification if task=='ner' else AutoModelForSequenceClassification
-            model=cls.from_pretrained(path).to(device).eval()
-            for r in rows:
-                if task=='ner':
-                    gold_spans.extend((r['id'],code,x['start'],x['end']) for x in r['spans'] if x['label']==code)
-                try:
-                    enc=tokenize_checked(tokenizer,r['text'],min(a.max_length,model.config.max_position_embeddings))
-                    offsets=enc.pop('offset_mapping')
-                    inputs={k:torch.tensor([v],device=device) for k,v in enc.items()}
-                    with torch.inference_mode():
-                        logits=model(**inputs).logits[0]
-                    if task=='classifier':
-                        idx=int(logits.argmax())
-                        predictions[r['id']]['prediction'][code]=__import__('json').loads(model.config.id2label[idx])
-                    else:
-                        ids=logits.argmax(-1).cpu().tolist()
-                        gold,expanded=bio_labels(offsets,[x for x in r['spans'] if x['label']==code])
-                        alignment.extend({'id':r['id'],**x} for x in expanded)
-                        token_gold.extend(g for g in gold if g!=-100)
-                        token_pred.extend(v for g,v in zip(gold,ids) if g!=-100)
-                        decoded=decode_bio(ids,offsets)
-                        pred_spans.extend((r['id'],code,s,e) for s,e in decoded)
-                        predictions[r['id']]['spans'].extend({'label':code,'start':s,'end':e,'text':r['text'][s:e]} for s,e in decoded)
-                except Exception as e:
-                    predictions[r['id']]['errors'].append({'column':code,'task':task,'error':f'{type(e).__name__}: {e}'})
+            with timed_phase('model_load', backend='transformer', column=code, task=task):
+                tokenizer=AutoTokenizer.from_pretrained(path,use_fast=True)
+                cls=AutoModelForTokenClassification if task=='ner' else AutoModelForSequenceClassification
+                model=cls.from_pretrained(path).to(device).eval()
+            with timed_phase('inference', backend='transformer', column=code, task=task, samples=len(rows)):
+                for r in rows:
+                    if task=='ner':
+                        gold_spans.extend((r['id'],code,x['start'],x['end']) for x in r['spans'] if x['label']==code)
+                    try:
+                        enc=tokenize_checked(tokenizer,r['text'],min(a.max_length,model.config.max_position_embeddings))
+                        offsets=enc.pop('offset_mapping')
+                        inputs={k:torch.tensor([v],device=device) for k,v in enc.items()}
+                        with torch.inference_mode():
+                            logits=model(**inputs).logits[0]
+                        if task=='classifier':
+                            idx=int(logits.argmax())
+                            predictions[r['id']]['prediction'][code]=__import__('json').loads(model.config.id2label[idx])
+                        else:
+                            ids=logits.argmax(-1).cpu().tolist()
+                            gold,expanded=bio_labels(offsets,[x for x in r['spans'] if x['label']==code])
+                            alignment.extend({'id':r['id'],**x} for x in expanded)
+                            token_gold.extend(g for g in gold if g!=-100)
+                            token_pred.extend(v for g,v in zip(gold,ids) if g!=-100)
+                            decoded=decode_bio(ids,offsets)
+                            pred_spans.extend((r['id'],code,s,e) for s,e in decoded)
+                            predictions[r['id']]['spans'].extend({'label':code,'start':s,'end':e,'text':r['text'][s:e]} for s,e in decoded)
+                    except Exception as e:
+                        predictions[r['id']]['errors'].append({'column':code,'task':task,'error':f'{type(e).__name__}: {e}'})
             del model
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()

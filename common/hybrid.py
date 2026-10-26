@@ -14,7 +14,7 @@ import time
 from common.data import load, read_jsonl, dump, jsonl, key
 from common.encoder_training import audit_training_parts
 from common.metrics import classification_report, value_metrics, span_metrics, save_metrics
-from common.runtime import new_output, versions
+from common.runtime import new_output, versions, timed_phase
 
 
 def ner_report(rows, predictions, code):
@@ -80,25 +80,26 @@ def train_spacy(rows, validation, column, dest, epochs, seed):
     optimizer.learn_rate=.001
     optimizer.grad_clip=1.0
     best=None;history=[];rng=random.Random(seed);sizes=compounding(1.,8.,1.01)
-    for epoch in range(1,epochs+1):
-        shuffled=examples[:];rng.shuffle(shuffled);losses={}
-        dropout=.3-.2*(epoch-1)/max(1,epochs-1)
-        for batch in minibatch(shuffled,size=sizes):
-            nlp.update(batch,sgd=optimizer,drop=dropout,losses=losses)
-        with nlp.use_params(optimizer.averages) if optimizer.averages else nullcontext():
-            predictions=spacy_predictions(nlp,validation,column['code'])
-            report=ner_report(validation,predictions,column['code'])
-            score=ner_selection(report,losses.get('ner',0))
-            entry={'epoch':epoch,'train_loss':float(losses.get('ner',0)),'dropout':dropout,
-                   'validation':report}
-            history.append(entry)
-            if best is None or score>best:
-                best=score;best_epoch=epoch
-                nlp.to_disk(dest/'model')
-        print(f"spaCy {column['code']} epoch={epoch}/{epochs} val_exact_f1={report['ner_f1']:.4f} char_f1={report['ner_entity_characters']['f1']:.4f}",flush=True)
-        dump(dest/'training_metrics.json',{'backend':'spacy','selection_split':'validation','best_epoch':best_epoch,
-             'selection_order':['exact_span_f1','entity_character_f1','fewer_false_positives','lower_train_loss'],
-             'history':history,'seed':seed})
+    with timed_phase('fit_and_validation', backend='spacy', column=column['code'], task='ner'):
+        for epoch in range(1,epochs+1):
+            shuffled=examples[:];rng.shuffle(shuffled);losses={}
+            dropout=.3-.2*(epoch-1)/max(1,epochs-1)
+            for batch in minibatch(shuffled,size=sizes):
+                nlp.update(batch,sgd=optimizer,drop=dropout,losses=losses)
+            with nlp.use_params(optimizer.averages) if optimizer.averages else nullcontext():
+                predictions=spacy_predictions(nlp,validation,column['code'])
+                report=ner_report(validation,predictions,column['code'])
+                score=ner_selection(report,losses.get('ner',0))
+                entry={'epoch':epoch,'train_loss':float(losses.get('ner',0)),'dropout':dropout,
+                       'validation':report}
+                history.append(entry)
+                if best is None or score>best:
+                    best=score;best_epoch=epoch
+                    nlp.to_disk(dest/'model')
+            print(f"spaCy {column['code']} epoch={epoch}/{epochs} val_exact_f1={report['ner_f1']:.4f} char_f1={report['ner_entity_characters']['f1']:.4f}",flush=True)
+            dump(dest/'training_metrics.json',{'backend':'spacy','selection_split':'validation','best_epoch':best_epoch,
+                 'selection_order':['exact_span_f1','entity_character_f1','fewer_false_positives','lower_train_loss'],
+                 'history':history,'seed':seed})
     nlp=spacy.load(dest/'model')
     dump(dest/'alignment_report.json',alignment)
     for split,rr in [('train_diagnostic',rows),('validation_best',validation)]:
@@ -134,15 +135,16 @@ def train_classifier(rows, validation, column, dest, seed):
     train_x=[r['text'] for r in rows];val_x=[r['text'] for r in validation]
     best=None;history=[];winner=None
     grid=[('svm',.25),('svm',1.),('svm',4.),('logistic',1.)] if len(set(train_y))>1 else [('dummy',1.)]
-    for algorithm,C in grid:
-        pipeline=classifier_pipeline(C,algorithm,seed) if algorithm!='dummy' else DummyClassifier(strategy='most_frequent')
-        pipeline.fit(train_x,train_y)
-        predictions=pipeline.predict(val_x).tolist()
-        report=classification_report(val_y,predictions,classes)
-        history.append({'algorithm':algorithm,'C':C,'validation':report})
-        score=(report['macro_f1'],report['accuracy'])
-        if best is None or score>best:
-            best=score;winner=pipeline;selected={'algorithm':algorithm,'C':C}
+    with timed_phase('fit_and_validation', backend='tfidf', column=column['code'], task='classifier', candidates=len(grid)):
+        for algorithm,C in grid:
+            pipeline=classifier_pipeline(C,algorithm,seed) if algorithm!='dummy' else DummyClassifier(strategy='most_frequent')
+            pipeline.fit(train_x,train_y)
+            predictions=pipeline.predict(val_x).tolist()
+            report=classification_report(val_y,predictions,classes)
+            history.append({'algorithm':algorithm,'C':C,'validation':report})
+            score=(report['macro_f1'],report['accuracy'])
+            if best is None or score>best:
+                best=score;winner=pipeline;selected={'algorithm':algorithm,'C':C}
     joblib.dump(winner,dest/'model.joblib')
     dump(dest/'training_metrics.json',{'backend':'tfidf','selection_split':'validation','selected':selected,
          'train_class_counts':dict(Counter(train_y)),'candidates':history,
@@ -161,10 +163,11 @@ def train_classifier(rows, validation, column, dest, seed):
 
 
 def train_hybrid(args):
+    out=new_output(args.output)
     data=Path(args.data);schema=load(data/'schema.json')
     parts={s:read_jsonl(data/f'{s}.jsonl') for s in ['train','validation']}
     audit_training_parts(parts)
-    out=new_output(args.output);epochs=int(args.epochs)
+    epochs=int(args.epochs)
     if epochs<1 or epochs!=args.epochs:
         raise ValueError('spaCy epochs must be a positive integer')
     started=time.perf_counter();results={}
@@ -194,12 +197,18 @@ def evaluate_hybrid(args):
         code=column['code']
         if 'ner' in tasks:
             import spacy
-            nlp=spacy.load(Path(args.models)/code/'ner/model')
-            pp=spacy_predictions(nlp,rows,code);ner_reports[code]=ner_report(rows,pp,code)
+            with timed_phase('model_load', backend='spacy', column=code, task='ner'):
+                nlp=spacy.load(Path(args.models)/code/'ner/model')
+            with timed_phase('inference', backend='spacy', column=code, task='ner', samples=len(rows)):
+                pp=spacy_predictions(nlp,rows,code)
+            ner_reports[code]=ner_report(rows,pp,code)
             for pred in pp:items[pred['id']]['spans'].extend(pred['spans'])
         if 'classifier' in tasks:
-            model=joblib.load(Path(args.models)/code/'classifier/model.joblib')
-            for row,pred in zip(rows,model.predict([r['text'] for r in rows])):
+            with timed_phase('model_load', backend='tfidf', column=code, task='classifier'):
+                model=joblib.load(Path(args.models)/code/'classifier/model.joblib')
+            with timed_phase('inference', backend='tfidf', column=code, task='classifier', samples=len(rows)):
+                predicted=model.predict([r['text'] for r in rows])
+            for row,pred in zip(rows,predicted):
                 items[row['id']]['prediction'][code]=json.loads(pred)
     metrics=value_metrics(rows,list(items.values()),schema) if 'classifier' in tasks else {'n':len(rows)}
     if 'ner' in tasks:

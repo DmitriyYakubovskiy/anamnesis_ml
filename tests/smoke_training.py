@@ -72,6 +72,15 @@ def main():
         run('compare.py',temp/'enc_eval/metrics.json',temp/'lora_eval/metrics.json',temp/'baseline/metrics.json','--output',temp/'comparison.json')
         for f in ['enc_eval','lora_eval','baseline']:
             assert (temp/f/'metrics.json').exists() and (temp/f/'predictions.jsonl').exists()
+        for name in ['enc','enc_train','enc_eval','lora','lora_eval','full','baseline']:
+            timing=json.loads((temp/name/'timing.json').read_text())
+            assert timing['status']=='completed' and timing['total_seconds']>0
+            expected='train' if name in {'enc','lora','full'} else 'evaluate'
+            assert timing['operation']==expected
+            phase='fit_and_validation' if expected=='train' else 'inference'
+            assert any(p['name']==phase for p in timing['phases'])
+            if expected=='evaluate':
+                assert json.loads((temp/name/'metrics.json').read_text())['metadata']['timing']==timing
         print('SMOKE PASS: NER + classifier, LoRA train/eval, merge equivalence, full SFT, plain Qwen eval. Random tiny weights, no quality claim.')
 
 
