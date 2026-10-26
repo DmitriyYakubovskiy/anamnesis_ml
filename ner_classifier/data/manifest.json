@@ -1,0 +1,148 @@
+{
+  "seed": 42,
+  "source_sha256": "7ea8610c3534b1335f21ae7bd17e371f836a69690366ea57096193f7acdd2c9f",
+  "schema": [
+    {
+      "code": "ARTERIAL_HYPERTENSION_FIX",
+      "name": "Артериальная гипертония",
+      "data_type": "bool",
+      "values": [
+        false,
+        true,
+        null
+      ]
+    }
+  ],
+  "grouping": "document_id + normalized identical text",
+  "excluded": [],
+  "splits": {
+    "validation": [
+      "5750a01a0a5744b4896c58645afbffeb",
+      "732c5cf936c841c1968977eda9230f16",
+      "77bb6dbc4f0c4ce0947de833fe18e5cc",
+      "8a33eb862945424f9a890a5ec1aaa9ee",
+      "a34a545bf30f4a47afc9f3bec08a283e",
+      "b2372ad7617646b1ad9205b55ee1a4d4",
+      "baa6758e5476426088fa92007858369a",
+      "c1d6b244cc9c43c195976d321c2f4743",
+      "d79fa5afc1284d4d8410ee5247c8bbac",
+      "e6b7f19d64794c12b9bf7b3e5329909e"
+    ],
+    "test": [
+      "02821ce3d97e4e57b6a5a95985f6eb4c",
+      "4d2bdd371920458ea830ffccec41785e",
+      "750aaaf8d91f43b1b649803e40c3e7d5",
+      "756c161a42ca45758464880499c7e90a",
+      "87d4927cc10f4e6ca3ca33db2110be67",
+      "bc0668acbbae4b719c657d61205646d4",
+      "bcb75c4eb17d4790903112a18f82e01f",
+      "ed574295dc284e8fae82a5dfa79ee7c0",
+      "f7407c743128488794c95924128e4157"
+    ],
+    "train": [
+      "0a4f1dc6e26b4c9ea63886cb632622f6",
+      "0b46a6c2265d4340a81a4130972e3585",
+      "0e496b76668d4860b68e5b2db830eaaf",
+      "19c26669fc794a6fbf344a26a58776ab",
+      "1f4f64e22f964803b564de013903deb4",
+      "228ebb3642c44f43a312b068fe9ce3f9",
+      "2fe6ae21c3f04fc2bc3a119531111a19",
+      "2fed61e24f9740e6beb97905913d39f3",
+      "308bd486c946482186e4a686ba62a0f2",
+      "3ebc082d67d14e7cb8e970568510e7b2",
+      "42aea22e17cb4f29a3eaf58d742017db",
+      "43a0815984c04cd1bbfbd82c93876b5b",
+      "4c3e1e59635d4a1eb2a59cf82e886863",
+      "4ece5c48421944adbb9215abb75791a4",
+      "51914a0b0af440228b85d523c9e472c6",
+      "521cb1ec69804bcb93598ffd796c8b33",
+      "5577decafd6a4abaae185a87b0f2b5bf",
+      "571a8fdae52e43b38b7b73ac1e969765",
+      "5963ab1348944507a18f4bd7397754b6",
+      "62c609538b2149d693f628617a05a930",
+      "699988a7727348e1b0c7ce7cbdb8a073",
+      "6a2fa73ba84c40fd8616b3f2d5743b5b",
+      "70f77616f4a14ca9b51b8c2108435464",
+      "71ca2bd01897437eb4186b38e8f6bea6",
+      "78f2e98cb51d4cbd8599c2ca69d51b04",
+      "7e1ea93456c1482c9c22905634c57c29",
+      "7f4f3f3a470742a69168df5926f84770",
+      "81c1baa94bd94ae8a3a7f8e2b1975c28",
+      "a3b944020f624bef88939c232e1c17ce",
+      "af1053003a0e4f04a4e2ef883ed47257",
+      "bb92cd269e604e5cb061d7ecd78ee53f",
+      "be809a9e6f7d4725846719d318630690",
+      "c21fa89f58ad4658b5e7c5a115310e10",
+      "d2c7628323bd4659a5e9bd6bbf7dbb44",
+      "e2297cda6ab548c181a575aa15bfdc4c",
+      "e5dea7bc883348639f2b13749b656e8f",
+      "e656f25ca13c4047b677bf21499c2a39",
+      "ea83168c074f419683d5c4c595c6350b",
+      "f41a4d93ee58490aa6131d4575ef605a",
+      "f597251cad20448f8b9962225cf5cc92",
+      "f6dd73cf3721499e975159c6b1587d14",
+      "f77bae5da98949a1b199299b9c0e349c",
+      "f7b3fa5acb8f44faaec2cd82c978123f",
+      "f90f7eb0fd8b4d26933ed4cbc5cac8e7",
+      "fc29378fff4340f9b0b89c00c72cea32",
+      "fe752b818e7b4910b823fddf16da9f10"
+    ]
+  },
+  "document_ids": {
+    "validation": [
+      "8f852774cf4d4555904fd5872f1d4e53",
+      "a54bf4d4b89143b89bbaf5d1ce16e74c",
+      "b5e7d14f115c4dc085fa118d083f289d"
+    ],
+    "test": [
+      "9234c30556e44dd49592f874d9740e35",
+      "c498407a28b9436690d199c63c29e4b6",
+      "d9af292df62446c0815de21db6d5f981"
+    ],
+    "train": [
+      "380f878e8cb143ac8bc6f447f6943c36",
+      "4b669793d5894417af81e25eaa733db0",
+      "6908ac512ed84395b1ad423299b1afbd",
+      "799d0601e37a4da98f3b34017c82f390",
+      "7e2b1a121a324a19befc8c146e6b5dd2",
+      "85a944a369cf4cb2a1bce4afcf17d503",
+      "86baae3ba9db4d63bd2609085d3ae320",
+      "8a6dbde1cadc49a0b47e76b294021c6e",
+      "b7078c5e7bb94c39ba21644d374d78eb",
+      "bce9e070e21e473e97c5c3d6e6f85507",
+      "c2e5d6df8d3040d99f78e4fc1a4c668a",
+      "c38cb59ab4124186991ddcae3b6ad926",
+      "ca59a03665384fbabcb0d3c3cb2b54e3",
+      "e9f0e940bf024a36bda6e516551ffeea",
+      "f6b7e5d11962476b8a6d15ff0d8954f3"
+    ]
+  },
+  "distribution": {
+    "validation": {
+      "ARTERIAL_HYPERTENSION_FIX": {
+        "false": 2,
+        "true": 5,
+        "null": 3
+      }
+    },
+    "test": {
+      "ARTERIAL_HYPERTENSION_FIX": {
+        "null": 3,
+        "true": 5,
+        "false": 1
+      }
+    },
+    "train": {
+      "ARTERIAL_HYPERTENSION_FIX": {
+        "true": 26,
+        "null": 13,
+        "false": 7
+      }
+    }
+  },
+  "warnings": [
+    "document_id is not patient_id: different documents of one patient may still leak; supply patient grouping before a clinical study.",
+    "This small dataset is for pipeline debugging, not a reliable estimate of clinical performance.",
+    "Enum/int classification vocabulary is inferred from export values; integers are categorical, not regression."
+  ]
+}

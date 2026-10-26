@@ -1,0 +1,4340 @@
+[
+  {
+    "id": "0a4f1dc6e26b4c9ea63886cb632622f6",
+    "document_id": "ca59a03665384fbabcb0d3c3cb2b54e3",
+    "document_name": "1.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не выставлялся. Инфаркт миокарда отрицает. Артериальная гипертония в течение длительного времени. Максимальные цифры АД 200/100 мм рт.ст. Адаптирован к АД 130/80 мм рт.ст. Регулярно принимает препараты: лориста 50мг; бисопролол 5мг. Ухудшение в течение месяца, когда стали беспокоить давящие, жгучие боли за грудиной, при обычных физических нагрузках, купирующиеся покоем или после приёма каптоприла. 22.01.2023г отмечал более интенсивные жгучие боли, после уборки снега, купировались покоем и каптоприлом 50мг. 23.01.2023г обратился за медицинской помощью в «кардиоклинику», по ЭКГ – ишемические изменения; до БСМП - каптоприл 25мг. Вызвали БСМП – от оказания помощи отказался. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема ST. Течение болезни: проведена перк КАГ и Транслюминальная баллонная ангиопластика передней межжелудочковой артерии со стентированием от 23.01.2023 г (1 стент с лекарственным покрытием).",
+    "created": 1792868282,
+    "updated": 1792868282,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "33276abb430c4b9189c034a9dbaeff3a",
+        "history_id": "0a4f1dc6e26b4c9ea63886cb632622f6",
+        "document_id": "ca59a03665384fbabcb0d3c3cb2b54e3",
+        "document_name": "1.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 53,
+        "end": 181,
+        "text": "Артериальная гипертония в течение длительного времени. Максимальные цифры АД 200/100 мм рт.ст. Адаптирован к АД 130/80 мм рт.ст.",
+        "result": true,
+        "created": 1792876717,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "5577decafd6a4abaae185a87b0f2b5bf",
+    "document_id": "ca59a03665384fbabcb0d3c3cb2b54e3",
+    "document_name": "1.docx",
+    "title": "Анамнез",
+    "text": "ИБС дебютировала развитием инфаркта миокарда без подъема сегмента ST (без зубца Q) 2 типа, переднеперегородочной стенки ЛЖ 23.01.2023 [АДРЕС], выявлено двухсосудистое гемодинамически значимое стенотическое поражение коронарных артерий ПМЖА и ОА, показана и выполнена ТБКА ПМЖА. Показана ТБКА ОВ вторым этапом. Артериальная гипертония в течение длительного времени. Максимальные цифры АД 200/100 мм рт.ст., течение заболевания кризовое, кризы редко, повышения АД ощущает в виде гула в ушах, сердцебиения, адаптирован к АД 130/80 мм рт.ст., последнее время регулярно принимает тромбитал 75 мг после ужина, клопидогрел 75мг, валсартан 80 мг по 1 таб утром и вечером, аторвастатин 40 мг в2р/день, торасемид по 5 мг утром, бисопролол (конкор) 5 мг по 1,5 таб утром. ТФН не страдает, ангинозные боли не беспокоят, АД в пределах нормы до 130/80 мм рт.ст.",
+    "created": 1792868327,
+    "updated": 1792868327,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "c016087e49ef438f88dd6c11b16937bc",
+        "history_id": "5577decafd6a4abaae185a87b0f2b5bf",
+        "document_id": "ca59a03665384fbabcb0d3c3cb2b54e3",
+        "document_name": "1.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 310,
+        "end": 364,
+        "text": "Артериальная гипертония в течение длительного времени.",
+        "result": true,
+        "created": 1792876729,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "750aaaf8d91f43b1b649803e40c3e7d5",
+    "document_id": "9234c30556e44dd49592f874d9740e35",
+    "document_name": "10.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не выставлялся. Инфаркт миокарда отрицает. Артериальная гипертония в течение длительного времени. Максимальные цифры АД 160/90 мм рт.ст. Адаптирован к АД 135/80 мм рт.ст. Регулярно принимает препараты: валсартан 80мг 2р/день. Ухудшение с утра 22.03.2023г, когда стал беспокоить дискомфорт в области сердца, давящего характера с иррадиацией под левую лопатку, слабость; самостоятельно принимала валидол, нитроглицерин, бисопролол – без изменений. 23.03.2023г самостоятельно обратилась в приёмное отделение ТКНЦ.",
+    "created": 1792866612,
+    "updated": 1792866612,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "dd6169c1a98b4713b34b3456b8fb1488",
+        "history_id": "750aaaf8d91f43b1b649803e40c3e7d5",
+        "document_id": "9234c30556e44dd49592f874d9740e35",
+        "document_name": "10.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 53,
+        "end": 180,
+        "text": "Артериальная гипертония в течение длительного времени. Максимальные цифры АД 160/90 мм рт.ст. Адаптирован к АД 135/80 мм рт.ст.",
+        "result": true,
+        "created": 1792876316,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "ed574295dc284e8fae82a5dfa79ee7c0",
+    "document_id": "9234c30556e44dd49592f874d9740e35",
+    "document_name": "10.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не верифицирована. Инфаркт миокарда отрицает. Артериальная гипертония в течение длительного времени. Максимальные цифры АД 160/90 мм рт.ст. Адаптирована к АД 135/80 мм рт.ст. Регулярно принимает препараты: валсартан 80мг 2р/день. Ухудшение с утра 22.03.2023г, когда стал беспокоить дискомфорт в области сердца, давящего характера с иррадиацией под левую лопатку, слабость; самостоятельно принимала валидол, нитроглицерин, бисопролол – без изменений.за медицинской помощью не обращалась 23.03.2023г самостоятельно обратилась в приёмное отделение ТКНЦ. С учетом результатов обследования (признаки крупноочагового ИМ по ЭКГ и положительный тропонин тест) направляется по неотложным показаниям в ангиоблок Течение болезни: проведена перв КАГ и операция транслюминальная баллонная коронарная ангиопластика, прямое стентирование ПКА.",
+    "created": 1792866634,
+    "updated": 1792866634,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "ea639e57b861410880dc8a48a6fd224d",
+        "history_id": "ed574295dc284e8fae82a5dfa79ee7c0",
+        "document_id": "9234c30556e44dd49592f874d9740e35",
+        "document_name": "10.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 56,
+        "end": 185,
+        "text": "Артериальная гипертония в течение длительного времени. Максимальные цифры АД 160/90 мм рт.ст. Адаптирована к АД 135/80 мм рт.ст. ",
+        "result": true,
+        "created": 1792876327,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "bcb75c4eb17d4790903112a18f82e01f",
+    "document_id": "9234c30556e44dd49592f874d9740e35",
+    "document_name": "10.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировала ИМ без подъема сегмента ST нижней локализации 23.03.2023[АДРЕС]пристеночного тромба, ПКА ср сегмент 75%, ПКА дист сегм 30%, ствол ЛКА 30%, ПМЖА 30%, ОА прокс сегмент 30%. Выполнена ТБКА со стентированием ПКА. Гипертоническая болезнь в течение длительного времени. Максимальные цифры АД 160/90 мм рт.ст. Адаптирована к АД 135/80 мм рт.ст. В рамках отделения неотложной кардиологии выполнено расширение объема двигательной ступени до объеме IIIа ступени ДА (двигательной активности), на освоенном режиме жалоб нет. Пациент нуждается в дальнейшем расширении режима двигательной активности под контролем клинического состояния и гемодинамических показателей. По результатам ТШХ составила 380 метров, что соотвествует ШРМ 3 балла. С учетом полной реваскуляризации, положительной динамики ИМ, определены показания к 3 этапу реабилитации в рамках дневного стационар[ОРГАНИЗАЦИЯ]аками пристеночного тромба. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА со стентированием ПКА. Поступила в ОМР на 3 этап реабилитации.",
+    "created": 1792866661,
+    "updated": 1792866661,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "17b75d56978544889fb25b3dcb3feb2d",
+        "history_id": "bcb75c4eb17d4790903112a18f82e01f",
+        "document_id": "9234c30556e44dd49592f874d9740e35",
+        "document_name": "10.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 229,
+        "end": 357,
+        "text": "Гипертоническая болезнь в течение длительного времени. Максимальные цифры АД 160/90 мм рт.ст. Адаптирована к АД 135/80 мм рт.ст.",
+        "result": true,
+        "created": 1792876338,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "02821ce3d97e4e57b6a5a95985f6eb4c",
+    "document_id": "9234c30556e44dd49592f874d9740e35",
+    "document_name": "10.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировал инфарктом миокарда без подъема сегмента ST (с з. Q) нижний, тип 1, от 23.03.2023[АДРЕС], ТБКА со стентированием правой коронарной артерии (1 стент Xience Alpine) от 23.03.2023[АДРЕС]0/90 мм рт.ст. Адаптирована к АД 135/80 мм рт.ст. Регулярно принимает препараты: торасемид 5мг; спиронолактон 25мг; бисопролол 5мг; аспирин кардио 100мг; тикагрелор; аторвастатин 40мг; эзетемиб 10мг; лозартан 50мг. ТФН не страдает. Периодический дискомфорт в области сердца, купирующийся в покое; редко испольузет нитраты; АД в пределах нормв 116/80 мм рт.ст.",
+    "created": 1792866719,
+    "updated": 1792999367,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "5963ab1348944507a18f4bd7397754b6",
+    "document_id": "c2e5d6df8d3040d99f78e4fc1a4c668a",
+    "document_name": "11.docx",
+    "title": "Анамнез",
+    "text": "ИБС, инфаркт миокарда , нарушение сердечного ритма отрицает. Артериальная гипертония в течении многих лет, с максимальным подъемом АД 180/ мм.рт.ст. гипотензивные препараты принимает ситуационно. Настоящее ухудшение состояния 02.02.23[АДРЕС]занная помощь:зилт-300мг.нитроспрей -2 дозы, аспирин-0.25 мг., морфин -1.0 в/в.стр. Доставлен в экстренном порядке в приемное отделение ТКНЦ. По тяжести состояния госпитализирован в ГРИИТ. Течение болезни: проведена перв КАГ Гемодинамически незначимый стеноз ствола ЛКА. Двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ПКА Дистальные отделы коронарных артерий истончены.",
+    "created": 1792866512,
+    "updated": 1792866512,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "d1e2f88a242f4d4f8d5b129e70a4beee",
+        "history_id": "5963ab1348944507a18f4bd7397754b6",
+        "document_id": "c2e5d6df8d3040d99f78e4fc1a4c668a",
+        "document_name": "11.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 60,
+        "end": 195,
+        "text": " Артериальная гипертония в течении многих лет, с максимальным подъемом АД 180/ мм.рт.ст. гипотензивные препараты принимает ситуационно.",
+        "result": true,
+        "created": 1792876277,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "81c1baa94bd94ae8a3a7f8e2b1975c28",
+    "document_id": "c2e5d6df8d3040d99f78e4fc1a4c668a",
+    "document_name": "11.docx",
+    "title": "Анамнез",
+    "text": "ИБС манифестировала острым инфарктом миокарда с подъёмом с. ST (с зубцом Q) 2 типа нижней локализации от 02.02.2023 года. В условиях ТКНЦ выполнена экстренная КАГ от 02.02.2023 года: гемодинамически незначимый стеноз ствола ЛКА, двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Принимая во внимание клинико-анамнестические данные, показана и выполнена ТБКА ПКА от 02.02.2023 года. Артериальная гипертония в течение длительного времени. Максимальные цифры АД 200/110 мм рт.ст. Адаптирован к АД 130/80 мм рт.ст. Регулярно принимает препараты: кардиомагнил 75 мг; брилинта 90 мг; валсартан 80 мг; бисопролол 2,5 мг; торасемид 5 мг; спиронолактон 25 мг; нитраты. 19.03.2023 года у пациента был эпизод переохлаждения. С 21.03.2023 пациента стали беспокоить боли в горле, появился влажный кашель с отделением небольшого количества мокроты слизистого характера, отмечалось повышение температуры тела до 39,0 С. Самостоятельно никаких лекарственных и симптоматических препаратов не принимал. В связи с сохранением вышеперечисленных жалоб 23.03.2023 года за медицинской помощью обратился в медцентр «Нефтяник», где была выполнена ЭКГ – ишемические изменения в нижней стенке ЛЖ, в виде подъемов ST. Вызвали БСМП, фельдшер[ВРАЧ]: Зилт 300 мг внутрь, Ацетилсалициловая к-та 250 мг внутрь, р-р нитроглицерин в/в. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС с подъемом ST. С учетом отсутствия ангинозных болей и отсутствия динамики по экг на уровне приемного отделения проводилось дообследование. С учетом повышения уровня тропонина госпитализирован в ГРИИТ",
+    "created": 1792866541,
+    "updated": 1792866541,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "1d36ca42fad242bd8221de5598e8dbf5",
+        "history_id": "81c1baa94bd94ae8a3a7f8e2b1975c28",
+        "document_id": "c2e5d6df8d3040d99f78e4fc1a4c668a",
+        "document_name": "11.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 431,
+        "end": 525,
+        "text": "Артериальная гипертония в течение длительного времени. Максимальные цифры АД 200/110 мм рт.ст.",
+        "result": true,
+        "created": 1792876294,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "af1053003a0e4f04a4e2ef883ed47257",
+    "document_id": "c2e5d6df8d3040d99f78e4fc1a4c668a",
+    "document_name": "11.docx",
+    "title": "Анамнез",
+    "text": "ИБС манифестировала острым инфарктом миокарда с подъёмом с. ST (с зубцом Q) 2 типа нижней локализации от 02.02.2023 года. В условиях ТКНЦ выполнена экстренная КАГ от 02.02.2023 года: гемодинамически незначимый стеноз ствола ЛКА, двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Принимая во внимание клинико-анамнестические данные, показана и выполнена ТБКА ПКА от 02.02.2023 года. Повторный инфаркт миокарда нижней стенки левого желудочка, неуточненной глубины поражения, неуточненного типа, от 23.03.23[АДРЕС]0/110 мм рт.ст. Адаптирован к АД 130/80 мм рт.ст. Регулярно принимает препараты: брилинта 90мг 2р/день; аторвастатин 40мг 2р/день; эзетимиб 10мг; тромбитал 75мг; престилол 10 + 10мг; леркамен 10мг; глюкофаж лонг 1000мг на ноччь.",
+    "created": 1792866582,
+    "updated": 1792999352,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "4c3e1e59635d4a1eb2a59cf82e886863",
+    "document_id": "799d0601e37a4da98f3b34017c82f390",
+    "document_name": "12.docx",
+    "title": "Анамнез",
+    "text": "Считает себя больным с 07:00 утра, когда появились боли за грудиной, за мед.помощью не обращался. Пошел на работу, пока ехал в общественном транспорте ощущал дискомфорт, после выхода из транспорта при ходьбе умеренным шагом боли возобновились, 300метров шел около 30минут, приходилось сидеть, чтобы боли утихли. По приходу на работу вызвал скорую помощь. На догоспитальном этапе выполнено:зилт 300мг;аспирин 250мг;морфин 1%-1мл в/в. Периодически отмечает повышение артериального давления до 160/90мм.рт.ст. Лекарственных препаратов не принимает. Течение болезни: проведена перв КАГ Однососудистое гемодинамически значимое стенотическое поражение ПКА. Показана и выполнена ТБКА ПКА",
+    "created": 1792855191,
+    "updated": 1792999329,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f597251cad20448f8b9962225cf5cc92",
+    "document_id": "799d0601e37a4da98f3b34017c82f390",
+    "document_name": "12.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировал инфарктом миокарда с подъемом сегмента ST нижней стенки левого желудочка, тип 1, с зубцом Q, от 25.03.2023[АДРЕС]арная ангиопластика со стентированием правой коронарной артерии (имплантирован 1 стент с лекарственным покрытием Synergy 4мм Х 24мм) от 25.03.2023[АДРЕС]даптирован к АД 110-120/80 мм рт.ст. Регулярно принимает препараты: брилинта 90мг 1р/в 2 дня (жалуется на жидкую кровь) отменен через 1 год; ацетилсалициловая к-та 75 мг 1р в день, вечером; аторвастатин 80мг 1р в сут вечером; бисопролол 2,5 мг 1/4 табл. ежедневно; верошпирон 25 мг по 1 таб днем; перидоприл 4мг по 1/2 табл утром.",
+    "created": 1792855262,
+    "updated": 1792999331,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "4ece5c48421944adbb9215abb75791a4",
+    "document_id": "bce9e070e21e473e97c5c3d6e6f85507",
+    "document_name": "13.docx",
+    "title": "Анамнез",
+    "text": "ИБС, инфаркт миокарда, нарушение сердечного ритма, артериальную гипертонию отрицает. Ухудшение состояния 14.04.23. около 16.00 появилась жгучая боль за грудиной, купировалась самостоятельно, за мед помощью не обращался. В 21.00.рецидив болевого синдрома. Вызвал БМСП. Оказанная помощь:зилт-300мг.нитроспрей -2 дозы, аспирин-0.25 мг., гепарин 4 т. Ед. в/в. морфин -1.0 в/в.стр., перлинганит 10.0 + NaCl 0,9%- 250.0 в/в. капельно. Доставлен в экстренном порядке в приемное отделение ТКНЦ. По тяжести состояния госпитализируется в ГРИИТ. Течение болезни: КАГ от 15.04.2023г:SYNTAXSCORE: 9, Однососудистое гемодинамически значимое стенотическое поражение ПМЖА. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ПМЖА.",
+    "created": 1792854939,
+    "updated": 1792854939,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "5f7fe63ca65c40aa8841cd65f498e57b",
+        "history_id": "4ece5c48421944adbb9215abb75791a4",
+        "document_id": "bce9e070e21e473e97c5c3d6e6f85507",
+        "document_name": "13.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 84,
+        "text": "ИБС, инфаркт миокарда, нарушение сердечного ритма, артериальную гипертонию отрицает.",
+        "result": false,
+        "created": 1792876216,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "43a0815984c04cd1bbfbd82c93876b5b",
+    "document_id": "bce9e070e21e473e97c5c3d6e6f85507",
+    "document_name": "13.docx",
+    "title": "Анамнез",
+    "text": "Ухудшение состояния 14.04.23. около 16.00 появилась жгучая боль за грудиной, купировалась самостоятельно, за мед помощью не обращался. В 21.00.рецидив болевого синдрома. Вызвал БМСП. Течение болезни: КАГ от 15.04.2023г:SYNTAXSCORE: 9, Однососудистое гемодинамически значимое стенотическое поражение ПМЖА. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ПМЖА. КАГ: ПКА проксимальный сегмент 30% Тип стеноза: B2; ПКА средний сегмент 30-50% Тип стеноза: C; ПКА средний сегмент 30% Тип стеноза: B2; ПКА дистальный сегмент Неровность контуров Задняя межжелудочковая ветвь 30% Тип стеноза: B1; Ствол ЛКА Неровность контуров ПМЖА проксимальный сегмент 30% Тип стеноза: C; Устьевое поражение; ПМЖА проксимальный сегмент Данных за рестеноз нет ПМЖА средний сегмент 30% Истончена; Бифуркация; Медина 0,1,1; ОА проксимальный сегмент Неровность контуров ЗБВ от ПКА 30-50% Тип стеноза: B2; SYNTAXSCORE: 0 Ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Данных за рестеноз в стенте ПМЖА нет. ПМЖА диффузно истончена. Тактика ведения - консервативная! \"ДОКУМЕНТ ПОДПИСАН [ПОДПИСЬ]",
+    "created": 1792855036,
+    "updated": 1792999309,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "c21fa89f58ad4658b5e7c5a115310e10",
+    "document_id": "bce9e070e21e473e97c5c3d6e6f85507",
+    "document_name": "13.docx",
+    "title": "Анамнез",
+    "text": "Артериальная гипертония в течение нескольких лет с максимальными цифрами АД 170/.. мм рт.ст, неоднократно, удовлетворительное самочувствия отмечает при АД 110-130/80 мм рт.ст., течение без четких кризов, малосимптомное. ИБС манифестировала ИМ без з.Q передне-боковой локализации от 14.04.2023г, на базе ТКЦ выполненна экстренная КАГ (ПКА прокс. сегм 30%, ПКА ср. сегм 30-50%, ПКА дист сегм 30%, ПМЖВ прокс. сегм 90% тромбоз, ПМЖВ ср. сегм 30-50%, первая диаг. ветвь 30-50%, дополнительная первая диаг. 30% ,первая ветвь тупого края 30-50%, ОА дист. сегм 60%, ЗБВ от ПКА 30%), по результатам которой ТБКА со стентированием ПМЖВ 1 стент- Xience Alpineот 15.04.2023[АДРЕС]я ИБС в рамках стенокардии напряжения ФК I-II. Какие-либо нарушения ритма отрицает. Повторная КАГ в плановом порядке от 16.10.2023г - Ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Данных за рестеноз в стенте ПМЖА нет. ПМЖА диффузно истончена. Тактика ведения - консервативная! Регулярно принимает: периндоприл 5мг1/2 табл; бисопролол 5мг; кардиомагнил 75мг; плавикс 75мг; аторвастатин 80мг; эзетимиб 10мг; омепразол 20мг",
+    "created": 1792855103,
+    "updated": 1792855103,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "40f6550b16ef452485df22d7ffeeed65",
+        "history_id": "c21fa89f58ad4658b5e7c5a115310e10",
+        "document_id": "bce9e070e21e473e97c5c3d6e6f85507",
+        "document_name": "13.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 219,
+        "text": "Артериальная гипертония в течение нескольких лет с максимальными цифрами АД 170/.. мм рт.ст, неоднократно, удовлетворительное самочувствия отмечает при АД 110-130/80 мм рт.ст., течение без четких кризов, малосимптомное.",
+        "result": true,
+        "created": 1792876245,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "a34a545bf30f4a47afc9f3bec08a283e",
+    "document_id": "a54bf4d4b89143b89bbaf5d1ce16e74c",
+    "document_name": "130.docx",
+    "title": "Анамнез",
+    "text": "Адаптирована к АД 120/70 мм рт. ст. Повышение мак до 150/80 мм.рт.ст.- редко . Постоянно препараты не принимает. Ухудшение в течении 3 дней -появились боли за грудиной при выходе и ходьбе по холоду одышка,пользовалась НГ - без стойкого эффекта. Обратилась для обследования и уточнения диагноза. По ЭКГ:Единственная ЭКГ. Синусовый ритм со средней ЧСС 61 в минуту. Резкое отклонение электрической оси сердца влево.Не исключаются очаговые изменения миокарда левого желудочка нижней локализации. Давность изменений- ? Сопоставить с клиникой, ЭКГ архивом (при его наличии), ЭКГ динамикой.",
+    "created": 1792755263,
+    "updated": 1792995768,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "не указано",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "e6b7f19d64794c12b9bf7b3e5329909e",
+    "document_id": "a54bf4d4b89143b89bbaf5d1ce16e74c",
+    "document_name": "130.docx",
+    "title": "Анамнез",
+    "text": "ИБС манифестировала ИМ без подъема сегмента ST нижне-боковой области ЛЖ 27.01.2026[АДРЕС], по КАГ - ПКА 75-90%, ПКА в среднем сегменте окклюзия, ПМЖА в среднем сегменте окклюзия, ОА 30%, ВТК1 90%. Показана и выполнена ТБКА со стентированием ПКА (имплантировано 3 стента с л/п). По ЭхоКГ: ФВ 47%, размер асинергии 25%, асинергия миокарда нижней стенки ЛЖ, задней части МЖП. Дальнейшая тактика обсуждена консилиумом в составе: рзам главного врача по ВМП, врач-[ВРАЧ] Н.А., зав отд ОРХМДЛ №1 [ВРАЧ], д.м.н., ангиохирург [ВРАЧ], ангиохирург [ВРАЧ], зав отд КО№1 к.м.н. [ВРАЧ], врач [ВРАЧ]: учитвая наличие гемодинамически значимого стенотического поражения (ВТК 1 - 90%) принято решение о необходимости проведения ТБКА со стентированием ВТК под контролем ВСУЗИ. После выписки регулярно принимает: пантопразол 20 мг, брилинта 90 мг 2 раза в день, лизиноприл 10 мг, бисопролол 1,25-2,5 мг, дапаглифлозин 10 мг, верошпирон 25 мг, кардиомагнил 75 мг, аторвастатин 80 мг. Гипертоническая болезнь так же с января 2026г, максимальные цифры АД 145/.. мм рт.ст., в настоящее время течение АГ стабильно, цифры в пределах 111-130/.. мм рт.ст. ЭхоКГ в динамике 25.02.26 - ФВ 56%, асинергия миокарда нижней стенки ЛЖ, задней части МЖП в размере 25%.",
+    "created": 1792755396,
+    "updated": 1792757768,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "062338a577774a49a2a24c337135fac5",
+        "history_id": "e6b7f19d64794c12b9bf7b3e5329909e",
+        "document_id": "a54bf4d4b89143b89bbaf5d1ce16e74c",
+        "document_name": "130.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 963,
+        "end": 1127,
+        "text": "Гипертоническая болезнь так же с января 2026г, максимальные цифры АД 145/.. мм рт.ст., в настоящее время течение АГ стабильно, цифры в пределах 111-130/.. мм рт.ст.",
+        "result": true,
+        "created": 1792757664,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "да",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "baa6758e5476426088fa92007858369a",
+    "document_id": "a54bf4d4b89143b89bbaf5d1ce16e74c",
+    "document_name": "130.docx",
+    "title": "Анамнез",
+    "text": "ОНМК, НРС ранее отрицает. Длительный анамнез по артериальной гипертонии, адаптирована к АД 120/70 мм.рт.ст. ИБС манифестировала с ОИМ без подъема сегмента ST нижне-боковой области ЛЖ 27.01.2026[АДРЕС], по КАГ - ПКА 75-90%, ПКА в среднем сегменте окклюзия, ПМЖА в среднем сегменте окклюзия, ОА 30%, ВТК1 90%. Показана и выполнена ТБКА со стентированием ПКА (имплантировано 3 стента с л/п). По ЭхоКГ: ФВ 47%, размер асинергии 25%, асинергия миокарда нижней стенки ЛЖ, задней части МЖП. Консилиумом принято решение: учитывая наличие гемодинамически значимого стенотического поражения (ВТК 1 - 90%) принято решение о необходимости проведения ТБКА со стентированием ВТК под контролем ВСУЗИ, запланирована госпитализация для второго этапа реваскуляризации. ЭхоКГ в динамике 25.02.26 - ФВ 56%, асинергия миокарда нижней стенки ЛЖ, задней части МЖП в размере 25%.",
+    "created": 1792755432,
+    "updated": 1792757776,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "f6751011382a41809f1b688e886894cd",
+        "history_id": "baa6758e5476426088fa92007858369a",
+        "document_id": "a54bf4d4b89143b89bbaf5d1ce16e74c",
+        "document_name": "130.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 26,
+        "end": 108,
+        "text": "Длительный анамнез по артериальной гипертонии, адаптирована к АД 120/70 мм.рт.ст. ",
+        "result": true,
+        "created": 1792757877,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "да",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "c1d6b244cc9c43c195976d321c2f4743",
+    "document_id": "a54bf4d4b89143b89bbaf5d1ce16e74c",
+    "document_name": "130.docx",
+    "title": "Анамнез",
+    "text": "ИБС манифестировала ИМ без подъема сегмента ST нижне-боковой области ЛЖ 27.01.2026[АДРЕС], по КАГ - ПКА 75-90%, ПКА в среднем сегменте окклюзия, ПМЖА в среднем сегменте окклюзия, ОА 30%, ВТК1 90%. Показана и выполнена ТБКА со стентированием ПКА (имплантировано 3 стента с л/п). По ЭхоКГ: ФВ 47%, размер асинергии 25%, асинергия миокарда нижней стенки ЛЖ, задней части МЖП. Дальнейшая тактика обсуждена консилиумом в составе: рзам главного врача по ВМП, врач-[ВРАЧ] Н.А., зав отд ОРХМДЛ №1 [ВРАЧ], д.м.н., ангиохирург [ВРАЧ], ангиохирург [ВРАЧ], зав отд КО№1 к.м.н. [ВРАЧ], врач [ВРАЧ]: учитвая наличие гемодинамически значимого стенотического поражения (ВТК 1 - 90%) принято решение о необходимости проведения ТБКА со стентированием ВТК под контролем ВСУЗИ. После выписки регулярно принимает: пантопразол 20 мг, брилинта 90 мг 2 раза в день, лизиноприл 10 мг, бисопролол 1,25-2,5 мг, дапаглифлозин 10 мг, верошпирон 25 мг, кардиомагнил 75 мг, аторвастатин 80 мг.",
+    "created": 1792755498,
+    "updated": 1792995774,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "не указано",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "e2297cda6ab548c181a575aa15bfdc4c",
+    "document_id": "f6b7e5d11962476b8a6d15ff0d8954f3",
+    "document_name": "14.docx",
+    "title": "Анамнез",
+    "text": "Считает себя больным с 14:00, когда при ремонте машины появилась интенсивная давящая боль за грудиной, со слов была кратковременная потеря сознания. Скорую помощь вызвал родственник (сын).На догоспитальном этапе выполнено: гепарин 5000МЕ в/в, зилт 300мг, аспирин 250мг,нитроглицерин 10мг в/в кап+раствор натрия хлорида 0,9%-200мл;морфин 1%-1мл в/в. В анамнезе множественные травмы нижних конечностей, верхних конечностей (спортивные, минифутбол), на правой кисти уплотнение со слов перелом кисти более 10 лет назад. Страдает артериальной гипертензией с максимальными подъемами давления до 200/100мм.рт.ст., адаптирован к 140/90мм.рт.ст. Прием таблетированных препаратов нерегулярный. Около 10лет назад диагностирована язвенная болезнь желудка. Течение болезни: провдена перв КАГ Однососудистое гемодинамически значимое стенотическое поражение ПКА. Мышечный мостик в средней трети ПМЖА со стенозированием просвета в систолу до 75%. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА со стентированием ПКА.",
+    "created": 1792854898,
+    "updated": 1792854898,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "6281a7bb27934ffba04ff689297740b0",
+        "history_id": "e2297cda6ab548c181a575aa15bfdc4c",
+        "document_id": "f6b7e5d11962476b8a6d15ff0d8954f3",
+        "document_name": "14.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 516,
+        "end": 636,
+        "text": "Страдает артериальной гипертензией с максимальными подъемами давления до 200/100мм.рт.ст., адаптирован к 140/90мм.рт.ст.",
+        "result": true,
+        "created": 1792876153,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "7e1ea93456c1482c9c22905634c57c29",
+    "document_id": "f6b7e5d11962476b8a6d15ff0d8954f3",
+    "document_name": "14.docx",
+    "title": "Анамнез",
+    "text": "АГ в течение нескольких лет, максимальные цифры до 150/90 мм.рт.ст, постоянно принимал гипотензивные пренпараты ( регулярно измеряет, работает водителем), ИБС дебютировала ОИМ с подьемомм сегмента ST передне-апикальной локализации, доставлен в ТКЦ, выполнена КАГ, выявлено : ПКА - 90 %, ПМЖВ - ср. систолический мост в систолу до 75 %, ВТК 1 - 30 %, выполнена ТБКА ПКА со стентированием. Послеоперационный период без осложнения. Постоянно принимает : Брилинта 90 мг , кардиомагнил 75 мг , периндоприл 4 мг 1 таб утром, аторвастатин 80 мг . На фоне терапии отмечает нестабильность цифр АДЛ, добавил самостоятельно амлодипин 5 мг . Направлен для консультации и коррекции терапии.",
+    "created": 1792854916,
+    "updated": 1792854916,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "a8b8ca353b464cda840179cf6b782007",
+        "history_id": "7e1ea93456c1482c9c22905634c57c29",
+        "document_id": "f6b7e5d11962476b8a6d15ff0d8954f3",
+        "document_name": "14.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 66,
+        "text": "АГ в течение нескольких лет, максимальные цифры до 150/90 мм.рт.ст",
+        "result": true,
+        "created": 1792876171,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "228ebb3642c44f43a312b068fe9ce3f9",
+    "document_id": "7e2b1a121a324a19befc8c146e6b5dd2",
+    "document_name": "15.docx",
+    "title": "Анамнез",
+    "text": "Артериальная гипертония в течение многих лет с максимальными цифрами АД 200/.. мм рт.ст., неоднократно, удовлетворительное самочувствие отмечает при АД 140/80 мм рт.ст., течение без четких кризов, малосимптомное. Перенесенные ОНМК отрицает. \nДиагноз ИБС манифестировал мелкоочаговым без з Q нижне-боковым инфарктом миокарда ЛЖ от 07.04.2020[АДРЕС]состоянии \nПостоянно принимает кардиомагнил, бисопролол 2,5 мг, аторвастатин (? не помнит). \nУхудшение самочувствия 19.04.2023 когда появился дискомфорт за грудиной, чувство жжения, самостоятельно принял кетопрофен – с положительным эффектом. 21.04.2023 около 04:00 часов вновь рецидив ангинозных болей (чувство жжения, давящая боль за грудиной), самостоятельно принял кетопрофен – без эффекта, в связи с чем вызвал БСМП. На догоспитальном этапе оказана помощь: . Доставлен БСМП в ПО ТКНЦ. В приемном отделении: метопролол 50 мг, нитроглицериню Доставлен БСМП в ПО ТКНЦ.",
+    "created": 1792854690,
+    "updated": 1792854690,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "2054bad9b2b64568b8ae7249958d8a4a",
+        "history_id": "228ebb3642c44f43a312b068fe9ce3f9",
+        "document_id": "7e2b1a121a324a19befc8c146e6b5dd2",
+        "document_name": "15.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 213,
+        "text": "Артериальная гипертония в течение многих лет с максимальными цифрами АД 200/.. мм рт.ст., неоднократно, удовлетворительное самочувствие отмечает при АД 140/80 мм рт.ст., течение без четких кризов, малосимптомное. ",
+        "result": true,
+        "created": 1792876120,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "e5dea7bc883348639f2b13749b656e8f",
+    "document_id": "7e2b1a121a324a19befc8c146e6b5dd2",
+    "document_name": "15.docx",
+    "title": "Анамнез",
+    "text": "СД 2 типа с 2020[АДРЕС]оконтроле до 10-14 ммоль/л. Диету соблюдает нестрого. Патологию ЩЖ в анамнезе отрицает. ИБС. Острый коронарный синдром без подъема сегмента ST нижней локализации ЛЖ от 21.04.2023. Killip I. Постинфарктный кардиосклероз( 2020г)Состояние после транслюминальной баллонной ангиопластики огибающей артерии со стентированием (1 стент с лекарственным покрытием) от 08.04.2020[АДРЕС]беркуломы (2010г).",
+    "created": 1792854846,
+    "updated": 1792999208,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "0e496b76668d4860b68e5b2db830eaaf",
+    "document_id": "c38cb59ab4124186991ddcae3b6ad926",
+    "document_name": "16.docx",
+    "title": "Анамнез",
+    "text": "Анамнез по ИБС отрицает. Артериальная гипертония более 5 лет, с максимальными цифрами АД до 230/140 мм рт.ст., адаптирован к АД 130-140/90мм рт.ст. Постоянно принимает: трипликсам (10/2,5/10) по 1 таб утром. Ухудшение с 18.04.2023г когда появились давящие боли за грудиной, возникающие без четкой связи с физической нагрузкой, длящиеся по несколько часов. Принимал самостоятельно валидол с неполным эффектом. В дальнейшем боли рецидивировали ежедневно. 21.04.2023г в связи с рецидивирующими ангинозными болями обратился в поликлинику \"Арбитайло\", записана ЭКГ, дано 2 дозы нитроспрея и аспирин 500 мг. Вызвана БСМП, доставлен в ТКНЦ.",
+    "created": 1792830150,
+    "updated": 1792830150,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "52e4cdf53ef0439d950eba501b185583",
+        "history_id": "0e496b76668d4860b68e5b2db830eaaf",
+        "document_id": "c38cb59ab4124186991ddcae3b6ad926",
+        "document_name": "16.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 25,
+        "end": 147,
+        "text": "Артериальная гипертония более 5 лет, с максимальными цифрами АД до 230/140 мм рт.ст., адаптирован к АД 130-140/90мм рт.ст.",
+        "result": true,
+        "created": 1792830550,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "78f2e98cb51d4cbd8599c2ca69d51b04",
+    "document_id": "c38cb59ab4124186991ddcae3b6ad926",
+    "document_name": "16.docx",
+    "title": "Анамнез",
+    "text": "Артериальная гипертония более 5 лет, с максимальными цифрами АД до 230/140 мм рт.ст., адаптирован к АД 130-140/90мм рт.ст. Постоянно принимает: трипликсам (10/2,5/10) по 1 таб утром. Ухудшение с 18.04.2023г когда появились давящие боли за грудиной, возникающие без четкой связи с физической нагрузкой, длящиеся по несколько часов. Принимал самостоятельно валидол с неполным эффектом. В дальнейшем боли рецидивировали ежедневно. 21.04.2023г в связи с рецидивирующими ангинозными болями обратился в поликлинику \"Арбитайло\", записана ЭКГ, дано 2 дозы нитроспрея и аспирин 500 мг. Вызвана БСМП, доставлен в ТКНЦ. С учетом повышения ферментов некроза миокарда и сохраняющегося дискомфорта в сердце направлен на экстренное чкв. СД2 инсулинопотребный . Течение болезни: КАГ от 21.04.2023г:ПКА проксимальный сегментНеровность контуров ПКА средний сегмент30%Кальциноз; ПКА дистальный сегментНеровность контуровдиффузное поражение с выраженным кальцинозом; Задняя межжелудочковая ветвь75%Тип стеноза: C; Артерия малого диаметра; Протяженное поражение; Ствол ЛКАНеровность контуров ПМЖА проксимальный сегмент30-50%Кальциноз; ПМЖА средний сегмент30%Кальциноз; ПМЖА верхушечный сегментНеровность контуров Первая ветвь тупого края75%Артерия малого диаметра; ОА дистальный сегмент30% ЗБВ от ПКАОкклюзия;Тип стеноза: C; Коллатеральный кровоток: 3; Заключение SYNTAXSCORE: 9,5 Двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Тактика ведения консервативная. \"ДОКУМЕНТ ПОДПИСАН [ПОДПИСЬ]",
+    "created": 1792830183,
+    "updated": 1792830183,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "30f5288085d5412495c14814f633a5e2",
+        "history_id": "78f2e98cb51d4cbd8599c2ca69d51b04",
+        "document_id": "c38cb59ab4124186991ddcae3b6ad926",
+        "document_name": "16.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 122,
+        "text": "Артериальная гипертония более 5 лет, с максимальными цифрами АД до 230/140 мм рт.ст., адаптирован к АД 130-140/90мм рт.ст.",
+        "result": true,
+        "created": 1792830563,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "be809a9e6f7d4725846719d318630690",
+    "document_id": "c38cb59ab4124186991ddcae3b6ad926",
+    "document_name": "16.docx",
+    "title": "Анамнез",
+    "text": "АД повышается несколько лет до 140мм рт ст, однократно гипертонический криз до 230/140мм рт ст, постоянно принимал триплексан. В апреле 23[АДРЕС], через 3дня обратился к кардиологу, по СП был доставлен в приемное отделение нашей клиники, госпитализирован с ИМ, выполнена КАГ - 21.04.2023: Тип кровоснабжения: правый. ПКА проксимальный сегмент - Неровность контуров.   ПКА средний сегмент - 30%.  Кальциноз;  ПКА дистальный сегмент - Неровность контуров.  диффузное поражение с выраженным кальцинозом;  Задняя межжелудочковая ветвь - 75%.  Тип стеноза: C; Артерия малого диаметра; Протяженное поражение;  Ствол ЛКА - Неровность контуров.   ПМЖА проксимальный сегмент - 30-50%.  Кальциноз;  ПМЖА средний сегмент - 30%.  Кальциноз;  ПМЖА верхушечный сегмент - Неровность контуров.   Первая ветвь тупого края - 75%.  Артерия малого диаметра;  ОА дистальный сегмент - 30%.   ЗБВ от ПКА - Окклюзия;  Тип стеноза: C; Коллатеральный кровоток: 3;   Заключение: Двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Тактика ведения консервативная.Боли купировались в стационар[ОРГАНИЗАЦИЯ]",
+    "created": 1792830221,
+    "updated": 1792830221,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "c40583936e6646f1a1bc6de7dbb12571",
+        "history_id": "be809a9e6f7d4725846719d318630690",
+        "document_id": "c38cb59ab4124186991ddcae3b6ad926",
+        "document_name": "16.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 95,
+        "text": "АД повышается несколько лет до 140мм рт ст, однократно гипертонический криз до 230/140мм рт ст,",
+        "result": true,
+        "created": 1792830588,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "732c5cf936c841c1968977eda9230f16",
+    "document_id": "8f852774cf4d4555904fd5872f1d4e53",
+    "document_name": "17.docx",
+    "title": "Анамнез",
+    "text": "длительно повышение ад с максимальными цифрами до 200\\100, контролирует ситуационно, принимает энап-н, чаще 150\\90. ИБС в анамнезе отрицает. Ухудшение с утра 21.04.23г когда при хотьбе появились давящие боли в области сердца. купировались самостоятельно. Вновь болевой синдром в 20.00 в покое. сразу вызвала БСМП.",
+    "created": 1792829900,
+    "updated": 1792829900,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "0b7317b8880a49a39e59a3d3af224e34",
+        "history_id": "732c5cf936c841c1968977eda9230f16",
+        "document_id": "8f852774cf4d4555904fd5872f1d4e53",
+        "document_name": "17.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 57,
+        "text": "длительно повышение ад с максимальными цифрами до 200\\100",
+        "result": true,
+        "created": 1792830502,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "77bb6dbc4f0c4ce0947de833fe18e5cc",
+    "document_id": "8f852774cf4d4555904fd5872f1d4e53",
+    "document_name": "17.docx",
+    "title": "Анамнез",
+    "text": "Повышение АД с 1995 г, максимально, до 180/? мм рт. ст. , принимала Энап НЛ 1 т. утром. АД при контроле 120/80-140/90 мм рт. ст. ИБС , ОИМ 21.04.2023 [АДРЕС], КАГ 21.04.2023 [АДРЕС]нием ОА 21.04.2023 [АДРЕС], кардиомагнил 75 мгх1р., аторвастатин 80 мгх1р., периндоприл 4 мг утром, бисопролол 2,5 мг утром, верошпирон 25 мг утром, омез 20 мг утром.",
+    "created": 1792829967,
+    "updated": 1792829967,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "f565ccffcd9146da811ea689a4edefdf",
+        "history_id": "77bb6dbc4f0c4ce0947de833fe18e5cc",
+        "document_id": "8f852774cf4d4555904fd5872f1d4e53",
+        "document_name": "17.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 128,
+        "text": "Повышение АД с 1995 г, максимально, до 180/? мм рт. ст. , принимала Энап НЛ 1 т. утром. АД при контроле 120/80-140/90 мм рт. ст.",
+        "result": true,
+        "created": 1792830521,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "b2372ad7617646b1ad9205b55ee1a4d4",
+    "document_id": "8f852774cf4d4555904fd5872f1d4e53",
+    "document_name": "17.docx",
+    "title": "Анамнез",
+    "text": "В анамнезе длительно гипертоническая болезнь, повышение АД с максимальными цифрами до 200/100 мм.рт.ст, редко; контролирует ситуационно, принимает энапН, чаще АД 150/90 мм.рт.ст. ИБС ранее не верифицирована. Ухудшение с 08.00 21.04.2023г, когда при ходьбе впервые в жизни появились давящие боли в грудной клетке, купировались самостоятельно покоем. Вновь болевой синдром рецидивировал в 20.00 в покое, сразу вызвала БСМП. На догоспитальном этапе оказана помощь: морфин 1,0мл в/в струйно, нитроспрей, аспирин 250 мг, зилт 300 мг, моксонидин 0,4 мг, гепарин 5000 ЕД в/в струйно. Доставлена с купированным болевым синдромом в ТКНЦ. По тяжести состояния госпитализируется в ГРИИТ.",
+    "created": 1792830012,
+    "updated": 1792830012,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "425882969d704161b4c780111cd11d78",
+        "history_id": "b2372ad7617646b1ad9205b55ee1a4d4",
+        "document_id": "8f852774cf4d4555904fd5872f1d4e53",
+        "document_name": "17.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 109,
+        "text": "В анамнезе длительно гипертоническая болезнь, повышение АД с максимальными цифрами до 200/100 мм.рт.ст, редко",
+        "result": true,
+        "created": 1792830535,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f6dd73cf3721499e975159c6b1587d14",
+    "document_id": "8a6dbde1cadc49a0b47e76b294021c6e",
+    "document_name": "18.docx",
+    "title": "Анамнез",
+    "text": "Считает себя больной с 17-18.04.2023года, когда во время чайпития с подругой появилась резкая слабость, потливость, со слов кратковременная потеря сознания. После восстановления сознания рвота, после которой некоторое время за грудиной сохранялось чувство \"комка\", дискомфорта. Скорую помощь не вызывала. Самостоятельно записалась на прием к терапевту,сегодня была доставлена с поликлинического приема сотрудниками скорой помощи. На догоспитальном этапе выполнено:гепарин 4000ЕД в\\в;зилт 300мг;метопролол 50мг;аспирин 0,25мг;нитроглицерин в/в кап. В анамнезе страдает артериальной гипетензией с макисмальными подъемами давления до 190/100мм.рт.ст.,адаптирована к 130-140/80мм.рт.ст. Принимет ситуационно эналаприл, последнее время принимала лористу. В 2022году удаление полипа шейки матки. Течение болезни: проведена перв КАГ :, Однососудистое гемодинамически значимое окклюзионное поражение ПКА. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ПКА",
+    "created": 1792829665,
+    "updated": 1792829665,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "72e653f1c28f4e2f9c70ff349fff21bf",
+        "history_id": "f6dd73cf3721499e975159c6b1587d14",
+        "document_id": "8a6dbde1cadc49a0b47e76b294021c6e",
+        "document_name": "18.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 548,
+        "end": 683,
+        "text": "В анамнезе страдает артериальной гипетензией с макисмальными подъемами давления до 190/100мм.рт.ст.,адаптирована к 130-140/80мм.рт.ст. ",
+        "result": true,
+        "created": 1792830458,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "521cb1ec69804bcb93598ffd796c8b33",
+    "document_id": "8a6dbde1cadc49a0b47e76b294021c6e",
+    "document_name": "18.docx",
+    "title": "Анамнез",
+    "text": "АГ много лет, постоянно гипотензивную терапию получала последние 2года. 21.04.2023[АДРЕС], появилась рвота, расценила состояние как отравление, через 10дней проходила профосмотр, по ЭКГ от 02.05.2023[АДРЕС], по СП госпитализирована в отделение неотложной кардиологии нашей клиники, выполнена КОРОНАРОАНГИОГРАФИЯ от 02.05.2023: Тип кровоснабжения: правый. ПКА проксимальный сегмент - Окклюзия;  Тип стеноза: C;  ПМЖА средний сегмент - 30-50%.  Тип стеноза: B1;  Первая диагональная ветвь - 30%.   Устьевой;   Заключение: Однососудистое гемодинамически значимое окклюзионное поражение ПКА. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ПКА. Пришла на контрольный осмотр через месяц. По ЭКГ без отрицательной динамики. Клинически - приступов стенокардии нет.",
+    "created": 1792829744,
+    "updated": 1792829744,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "c40cb6e19b86410b8315c76b70ce7327",
+        "history_id": "521cb1ec69804bcb93598ffd796c8b33",
+        "document_id": "8a6dbde1cadc49a0b47e76b294021c6e",
+        "document_name": "18.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 71,
+        "text": "АГ много лет, постоянно гипотензивную терапию получала последние 2года.",
+        "result": true,
+        "created": 1792830480,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f7407c743128488794c95924128e4157",
+    "document_id": "c498407a28b9436690d199c63c29e4b6",
+    "document_name": "19.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не выставлялся. Инфаркт миокарда, ОНМК, нарушения ритма отрицает. Регулярно артериальное давление не измеряет. Регулярно лекарственные препараты не принимает. Ухудшение с 22:00, когда после приема пищи, впервые возникла давящая боль за грудиной без иррадиации. Самостоятельно лекарственные препараты не принимал. Вызвал БСМП, снята ЭКГ – нарушение реполяризации по передне-боковой области ЛЖ в виде отрицательных T в отведениях V1-V6, при измерении АД 200/90 мм рт.ст., врач[ВРАЧ]: моксонидин 0,4 мг – в динамике АД 150/80 мм рт.ст., нитроспрей 1 доза – с положительным эффектом. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема ST.",
+    "created": 1792829354,
+    "updated": 1792999187,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "87d4927cc10f4e6ca3ca33db2110be67",
+    "document_id": "c498407a28b9436690d199c63c29e4b6",
+    "document_name": "19.docx",
+    "title": "Анамнез",
+    "text": "Ухудшение с 22:00, когда после приема пищи, впервые возникла давящая боль за грудиной без иррадиации. Вызвал БСМП, снята ЭКГ – нарушение реполяризации по передне-боковой области ЛЖ в виде отрицательных T в отведениях V1-V6, при измерении АД 200/90 мм рт.ст., врач[ВРАЧ]: моксонидин 0,4 мг – в динамике АД 150/80 мм рт.ст., нитроспрей 1 доза – с положительным эффектом. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема ST. Страдает артериальной гипертензией около 10лет,максимально повышение давления до 180/90мм.рт.ст. Лекарственные препараты не принимает. За цифрами давления не следит. Течение болезни: проведена перв КАГ : Двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ОА.",
+    "created": 1792829438,
+    "updated": 1792829438,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "7f5f10c7e84b43c58a9a4f7279b7d5da",
+        "history_id": "87d4927cc10f4e6ca3ca33db2110be67",
+        "document_id": "c498407a28b9436690d199c63c29e4b6",
+        "document_name": "19.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 464,
+        "end": 561,
+        "text": "Страдает артериальной гипертензией около 10лет,максимально повышение давления до 180/90мм.рт.ст. ",
+        "result": true,
+        "created": 1792830409,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "4d2bdd371920458ea830ffccec41785e",
+    "document_id": "c498407a28b9436690d199c63c29e4b6",
+    "document_name": "19.docx",
+    "title": "Анамнез",
+    "text": "Примерно 20лет повышается АД, последнее время до 160/80мм рт ст, регулярно ипотензивную терапию не получал. 02.05.2023[АДРЕС], АД 200/90 мм рт ст, по СП доставлен в ТКНЦ с ОИМ, выполнена КАГ от 03.05.2023: Тип кровоснабжения: правый. ПКА проксимальный сегмент - 30%.  Протяженное поражение;  ПКА дистальный сегмент - 60%.  Тип стеноза: B2; Протяженное поражение;  ПМЖА проксимальный сегмент - Неровность контуров.  Кальциноз;  ПМЖА средний сегмент - 30-50%.  Бифуркация; Медина 0,1,0; Кальциноз;  ПМЖА средний сегмент - Неровность контуров.   ПМЖА верхушечный сегмент - Субтотальный стеноз.  Тип стеноза: C;  ОА проксимальный сегмент - Окклюзия;   признаки острого тромбоза; Тип стеноза: C;   Заключение: Двухсосудистое гемодинамически значимое стенотическое и окклюзионное поражение коронарных артерий. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ОА. Состояние стабилизировалось, пришел на контрольный прием через месяц. ЛПНП , ТГ достигли целевого уровня, ЛПВП низкие. Нет компенсации СД (гликированный Нв9,9).",
+    "created": 1792829571,
+    "updated": 1792829571,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "efb3fc8b7f6e404bb57380d170464920",
+        "history_id": "4d2bdd371920458ea830ffccec41785e",
+        "document_id": "c498407a28b9436690d199c63c29e4b6",
+        "document_name": "19.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 145,
+        "text": "Примерно 20лет повышается АД, последнее время до 160/80мм рт ст, регулярно ипотензивную терапию не получал. 02.05.2023[АДРЕС], АД 200/90 мм рт ст",
+        "result": true,
+        "created": 1792830359,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "fe752b818e7b4910b823fddf16da9f10",
+    "document_id": "b7078c5e7bb94c39ba21644d374d78eb",
+    "document_name": "2.docx",
+    "title": "Анамнез",
+    "text": "Повышение ад с максимальными цифрами до 150\\90. контролирует, адапьтирована 130\\80, принимает лозартан, метопролол. сегодня ночью пароксизм учащенного сердцебиение, принимала метопролол с положительным эффектом. Сегодня с 10 утра дискомфорт в области сердца, вызвала БСМП.",
+    "created": 1792868229,
+    "updated": 1792999496,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f90f7eb0fd8b4d26933ed4cbc5cac8e7",
+    "document_id": "b7078c5e7bb94c39ba21644d374d78eb",
+    "document_name": "2.docx",
+    "title": "Анамнез",
+    "text": "ИБС, инфаркты, нарушение ритма сердечной деятельности, нарушение мозговго крообращения отрицает. В анамнезе Артериальная гипертония с максимальными цифрами АД до 150/... мм рт.ст., принимает Лозартан, метопролол. Ухудшение состояния 11.02.2023 [АДРЕС], самостоятельно принимала Метопрлолол с положительным эффектом. В 10:00 появился дискомфорт в области сердца, вызвала СМП. Догоспитально оказана помощь: Нитроминт п/я. Доставлена в приемное отделение ТКНЦ. На уровне приеменого отделения проведено обследование, выявлены положительные маркеры повреждения миокарда. Госпитализирована в ГРиИТ. Течение болезни: проведена перв КАГ , Ангиографических данных за стенотическое и тромботическое поражение коронарных артерий нет. Тактика ведения - консервативная.",
+    "created": 1792868245,
+    "updated": 1792868245,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "db6d4ac505aa494a8e3ada8c0495db4b",
+        "history_id": "f90f7eb0fd8b4d26933ed4cbc5cac8e7",
+        "document_id": "b7078c5e7bb94c39ba21644d374d78eb",
+        "document_name": "2.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 108,
+        "end": 179,
+        "text": "Артериальная гипертония с максимальными цифрами АД до 150/... мм рт.ст.",
+        "result": true,
+        "created": 1792876697,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "e656f25ca13c4047b677bf21499c2a39",
+    "document_id": "6908ac512ed84395b1ad423299b1afbd",
+    "document_name": "20.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не выставлялся. Инфаркт миокарда, ОНМК, нарушения ритма отрицает. Повышение АД выше 140/90 мм рт.ст. отрицает. Регулярно лекарственные препараты не принимает. Ухудшение с 09:00, когда после психоэмоционального стресса возникла сначала жгучая, затем давящая боль за грудиной, бросило в холодный пот. Со слов, недавно переболел ангиной. Вызвал БСМП, врач[ВРАЧ]: нитроспрей 1 доза – без эффекта, морфина гидрохлорид 1,0 на 10 мл физ.раствора – болевой синдром купирован. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема ST.",
+    "created": 1792756021,
+    "updated": 1792757928,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "8395e563dde04711825d6dd0ac72254f",
+        "history_id": "e656f25ca13c4047b677bf21499c2a39",
+        "document_id": "6908ac512ed84395b1ad423299b1afbd",
+        "document_name": "20.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 76,
+        "end": 120,
+        "text": "Повышение АД выше 140/90 мм рт.ст. отрицает.",
+        "result": false,
+        "created": 1792757904,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "нет",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "0b46a6c2265d4340a81a4130972e3585",
+    "document_id": "6908ac512ed84395b1ad423299b1afbd",
+    "document_name": "20.docx",
+    "title": "Анамнез",
+    "text": "Анамнез: ИБС. Инфаркт миокарда без подъема сегмента ST по апикально-боковой стенке ЛЖ от 08.05.2023. АД не котролирует. Неврологический статус: Менингиальные знаки: PT-338E6AC41B: ясное Исследование функций Ч.М. нервов: Зрачки: равные, средней величины Глазодвигательные расстройства:нет Лицо: симметрично Бульбарные расстройства: нет Рефлекторно-двигательная сфера: парезов (параличей) - нет Сухожильные рефлексы: средней живости, симметричны Патологические стопные знаки, патологические кистевые знаки: нет Чувствительная сфера: чувствительных расстройств нет Координаторная сфера: в позе Ромберга устойчив, ПНП и КПП выполняет правильно Эмоционально-волевая сфера: нет отклонений Высшие корковые функции: не нарушены",
+    "created": 1792756104,
+    "updated": 1792995818,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "не указано",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "42aea22e17cb4f29a3eaf58d742017db",
+    "document_id": "6908ac512ed84395b1ad423299b1afbd",
+    "document_name": "20.docx",
+    "title": "Анамнез",
+    "text": "Анамнез: ИБC манифестировал инфаркт миокарда без подъема сегмента ST (без з. Q), апикально-боковой, тип 2, от 08.05.2023[АДРЕС]ское и стенотическое поражение коронарных артерий нет. Тактика ведения - консервативная. Артериальная гипертония ранее не верифицирована. Адаптирован к АД 110-120/80 мм рт.ст. Регулярно принимает препараты: брилинта 90мг 2р/день; ацетилсалициловая к-та 100мг; периндоприл 4мг 1/2 табл.; бисопролол 2,5мг 1/2 табл.; омепразол 20мг.",
+    "created": 1792756125,
+    "updated": 1792757950,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "b3b49ea120a242859c5c7c0f7087fe28",
+        "history_id": "42aea22e17cb4f29a3eaf58d742017db",
+        "document_id": "6908ac512ed84395b1ad423299b1afbd",
+        "document_name": "20.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 216,
+        "end": 264,
+        "text": "Артериальная гипертония ранее не верифицирована.",
+        "result": false,
+        "created": 1792758002,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "нет",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "19c26669fc794a6fbf344a26a58776ab",
+    "document_id": "6908ac512ed84395b1ad423299b1afbd",
+    "document_name": "20.docx",
+    "title": "Анамнез",
+    "text": "ИБС манифестировала с апикально-бокового инфаркта миокарда от 08.05.2023[АДРЕС], в дальнейшем отменил самостоятельно. Повышение АД отрицает, адаптирован к 120/70-80 мм рт.ст. Дислипидемия. Ухудшение с 24.03.2025г около 13:00 отметил появление давящих болей за грудиной, с иррадиацией в межлопаточную [АДРЕС], по данным ЭКГ - без ишемических изменений. Доставлен в ТКНЦ, с диагнозом: ОКС без подъема с.ST. На догоспитальном этапе: в/в доступ, нитроспрей 1 доза.",
+    "created": 1792756180,
+    "updated": 1792757974,
+    "workflow_status": "done",
+    "document_status": "done",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "305ce1df118141c7865290f5a2f8a885",
+        "history_id": "19c26669fc794a6fbf344a26a58776ab",
+        "document_id": "6908ac512ed84395b1ad423299b1afbd",
+        "document_name": "20.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 118,
+        "end": 139,
+        "text": "Повышение АД отрицает",
+        "result": false,
+        "created": 1792758020,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": "нет",
+        "state": "value"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "a3b944020f624bef88939c232e1c17ce",
+    "document_id": "4b669793d5894417af81e25eaa733db0",
+    "document_name": "3.docx",
+    "title": "Анамнез",
+    "text": "Диагноз ИБС длительное время, КАГ не проводилась. Перенесенные ИМ в анамнезе отрицает. Артериальная гипертония более 20 лет, с максимальными цифрами АД 260/... мм рт.ст., рабочие цифры АД не указывает, самоконтроль АД не проводит. Со слов, пациента медикаментозную терапию в течение 3х месяцев не принимает. Не наблюдается в поликлинике по месту жительства. \nСегодня утром 18.02.23[АДРЕС], когда появилось жжение за грудиной, цифры АД стали нестабильными со склонностью к повышению до 220/... мм рт.ст. самостоятельно принял 0,4 мг 2 табл. моксонидина без положительного эффекта. Вызвана БСМП, догоспитально оказана мед. помощь: урапидил 5 мг-5мл на 0,9% р-ре NaCl в/в кап. , нитроглицерин 10 мл в/в стр. Доставлен в ПО ТКНЦ, Тропонин I 67,3 нг/л (полож.), боли ангинозного характера на момент осмотра не рецидивировали. Пациент совместно обсужден с дежурным реаниматологом [ВРАЧ]- рекомендован контроль тропонина через 1 ч. В динамике Тропонин I 70 нг/л - повторно обсужден с дежурным реаниматологом [ВРАЧ]- госпитализирован в отделение неотложной кардиологии (КО №1) по неотложным показаниям на каталке.",
+    "created": 1792868122,
+    "updated": 1792868122,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "d3a88d4d7fd446f8a86129902184b8dd",
+        "history_id": "a3b944020f624bef88939c232e1c17ce",
+        "document_id": "4b669793d5894417af81e25eaa733db0",
+        "document_name": "3.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 87,
+        "end": 230,
+        "text": "Артериальная гипертония более 20 лет, с максимальными цифрами АД 260/... мм рт.ст., рабочие цифры АД не указывает, самоконтроль АД не проводит.",
+        "result": true,
+        "created": 1792876622,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "571a8fdae52e43b38b7b73ac1e969765",
+    "document_id": "4b669793d5894417af81e25eaa733db0",
+    "document_name": "3.docx",
+    "title": "Анамнез",
+    "text": "Диагноз ИБС длительное время, КАГ не проводилась. Перенесенные ИМ в анамнезе отрицает. Артериальная гипертония более 20 лет, с максимальными цифрами АД 260/... мм рт.ст., рабочие цифры АД не указывает, самоконтроль АД не проводит. Со слов, пациента медикаментозную терапию в течение 3х месяцев не принимает. Не наблюдается в поликлинике по месту жительства. Утром 18.02.23[АДРЕС], когда появилось жжение за грудиной, цифры АД стали нестабильными со склонностью к повышению до 220/... мм рт.ст. самостоятельно принял 0,4 мг 2 табл. моксонидина без положительного эффекта. Вызвана БСМП, догоспитально оказана мед. помощь: урапидил 5 мг-5мл на 0,9% р-ре NaCl в/в кап. , нитроглицерин 10 мл в/в стр. Доставлен в ПО ТКНЦ, Тропонин I 67,3 нг/л (полож.), боли ангинозного характера на момент осмотра не рецидивировали. Пациент совместно обсужден с дежурным реаниматологом [ВРАЧ]- рекомендован контроль тропонина через 1 ч. В динамике Тропонин I 70 нг/л - повторно обсужден с дежурным реаниматологом [ВРАЧ]- госпитализирован в отделение неотложной кардиологии (КО №1) по неотложным показаниям на каталке. Течение болезни: проведена перв КАГ, Ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Тактика ведения - консервативная.Дистальные отделы коронарных артерий извиты, истончены.",
+    "created": 1792868140,
+    "updated": 1792868140,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "840326b3478e40dea06384e9d5992f5b",
+        "history_id": "571a8fdae52e43b38b7b73ac1e969765",
+        "document_id": "4b669793d5894417af81e25eaa733db0",
+        "document_name": "3.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 87,
+        "end": 231,
+        "text": "Артериальная гипертония более 20 лет, с максимальными цифрами АД 260/... мм рт.ст., рабочие цифры АД не указывает, самоконтроль АД не проводит. ",
+        "result": true,
+        "created": 1792876636,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "fc29378fff4340f9b0b89c00c72cea32",
+    "document_id": "4b669793d5894417af81e25eaa733db0",
+    "document_name": "3.docx",
+    "title": "Анамнез",
+    "text": "ИБC в течение длительного времени. Перенёс инфаркт миокарда от 18.02.2023[АДРЕС]мое стенотическое поражение КА нет. Артериальная гипертония в течение длительного времени. Максимальные цифры АД 260/120 мм рт.ст. Адаптирован к АД 130/80 мм рт.ст. Регулярно принимает препараты: тикагрелор, кардиомагнил, аторвастатин, валсартан, бисопролол, кардикет, моксонидин, торасемид, спиронолактон. Ухудшение 26.04.2023г, со слов – потерял сознание на короткое время, резкая слабость, затруднение речи. Самостоятельно обратился в приёмное отделение ТКНЦ.",
+    "created": 1792868151,
+    "updated": 1792868151,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "b17e9a48c2b64e8b84be9ca0a67c1061",
+        "history_id": "fc29378fff4340f9b0b89c00c72cea32",
+        "document_id": "4b669793d5894417af81e25eaa733db0",
+        "document_name": "3.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 116,
+        "end": 170,
+        "text": "Артериальная гипертония в течение длительного времени.",
+        "result": true,
+        "created": 1792876646,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "699988a7727348e1b0c7ce7cbdb8a073",
+    "document_id": "4b669793d5894417af81e25eaa733db0",
+    "document_name": "3.docx",
+    "title": "Анамнез",
+    "text": "АГ 10лет, постоянную гипотензивную терапию не получал. 18.02.23[АДРЕС], при КАГ - Ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Тактика ведения - консервативная.Дистальные отделы коронарных артерий извиты, истончены. Выписан с диагнозом апикально-бокового ИМ. После выписки отмечал низкое АД, 26.04. наблюдался в приемном отделении нашей клиники после обморока, была произведена коррекция терапии, состояние стабилизировалось , АД 120-130/...мм р ст. Пришел на контрольный осмотр. В крови - мочевина 13,6, креатинин 236мкмоль/л, мочевая кислота 619мкмоль/л",
+    "created": 1792868165,
+    "updated": 1792868165,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "24f79fbdd1524a0f80ef6aa24cf6c446",
+        "history_id": "699988a7727348e1b0c7ce7cbdb8a073",
+        "document_id": "4b669793d5894417af81e25eaa733db0",
+        "document_name": "3.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 54,
+        "text": "АГ 10лет, постоянную гипотензивную терапию не получал.",
+        "result": true,
+        "created": 1792876655,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "3ebc082d67d14e7cb8e970568510e7b2",
+    "document_id": "4b669793d5894417af81e25eaa733db0",
+    "document_name": "3.docx",
+    "title": "Анамнез",
+    "text": "АГ оклоло 10 лет, с максимальным подъемом до 260/? мм.рт.ст., целевые значения не достигнуты. ОНМК от 2010 [АДРЕС]",
+    "created": 1792868182,
+    "updated": 1792868182,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "8f98bd513333408d81b8c5dda0a6381f",
+        "history_id": "3ebc082d67d14e7cb8e970568510e7b2",
+        "document_id": "4b669793d5894417af81e25eaa733db0",
+        "document_name": "3.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 94,
+        "text": "АГ оклоло 10 лет, с максимальным подъемом до 260/? мм.рт.ст., целевые значения не достигнуты. ",
+        "result": true,
+        "created": 1792876663,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "bb92cd269e604e5cb061d7ecd78ee53f",
+    "document_id": "4b669793d5894417af81e25eaa733db0",
+    "document_name": "3.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировал инфарктом миокарда без подъема сегмента ST (с з. Q), апикальнобоковой, тип 2, от 18.02.2023[АДРЕС]чески значимое стенотическое поражение коронарных артерий нет. Тактика ведения - консервативная. Дистальные отделы коронарных артерий извиты, истончены. Гипертоническая болезнь более 20 лет, с максимальными цифрами повышения АД до 260/... мм рт.ст. Адаптирован к АД 120-130/80 мм рт.ст. Регулярно принимает препараты: брилинта 90мг 2р/день; ацетилсалициловая к-та 100мг; аторвастатин 80мг; триплексам 10+2,5+10мг; бисопролол 5мг; доксазозон 4мг.",
+    "created": 1792868205,
+    "updated": 1792868205,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "11eb0989ee9f4f5ca8df88d419b249c0",
+        "history_id": "bb92cd269e604e5cb061d7ecd78ee53f",
+        "document_id": "4b669793d5894417af81e25eaa733db0",
+        "document_name": "3.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 270,
+        "end": 403,
+        "text": "Гипертоническая болезнь более 20 лет, с максимальными цифрами повышения АД до 260/... мм рт.ст. Адаптирован к АД 120-130/80 мм рт.ст.",
+        "result": true,
+        "created": 1792876679,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "2fe6ae21c3f04fc2bc3a119531111a19",
+    "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+    "document_name": "4.docx",
+    "title": "Анамнез",
+    "text": "Диагноз ИБС ранее не верифицирован, КАГ не проводились. Перенесенные ИМ, ОНМК в анамнезе отрицает. Артериальная гипертония с максимальными цифрами АД 180/100 мм рт.ст., удовлетоворительно себя чувствует при АД 120-130/80 мм рт.ст., течение АГ без четких кризов. Принимает медикаментозную терапию: лозартан 50 мг утрои и 25 мг вечером, гидрохлортиазид 12,5 мг. Около 3х лет беспокоят боли ангинозного характера, возникающие при психоэмоциональном напряжении, приступообразного характера купируются в покое после приема валосердина. В поликлинике по месту жительства не наблюдается. \nСегодня 18.02.23[АДРЕС], не купировались приемом валосердина. Родственниками вызвана БСМП, догоспитально - в/в доступ. Доставлен в ПО ТКНЦ с диагнозом: Нестабильная стенокардия. В ПО ТКНЦ сохраняется остаточный дискомфорт за грудиной, Тропонин I 30.5 нг/л, в динамике через час - Тропонин I 86,6 нг/л. Совместно обсужден с дежурным реаниматологом [ВРАЧ] Госпитализирован в группу реанимации и интенсивной терапии КО №1 (ГРиИТ) по экстренным показаниям на каталке.",
+    "created": 1792867968,
+    "updated": 1792867968,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "b81ef9bedb544c4683b3331b68b70c14",
+        "history_id": "2fe6ae21c3f04fc2bc3a119531111a19",
+        "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+        "document_name": "4.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 99,
+        "end": 261,
+        "text": "Артериальная гипертония с максимальными цифрами АД 180/100 мм рт.ст., удовлетоворительно себя чувствует при АД 120-130/80 мм рт.ст., течение АГ без четких кризов.",
+        "result": true,
+        "created": 1792876514,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "51914a0b0af440228b85d523c9e472c6",
+    "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+    "document_name": "4.docx",
+    "title": "Анамнез",
+    "text": "Диагноз ИБС ранее не верифицирован, КАГ не проводились. Перенесенные ИМ, ОНМК в анамнезе отрицает. Артериальная гипертония с максимальными цифрами АД 180/100 мм рт.ст., удовлетоворительно себя чувствует при АД 120-130/80 мм рт.ст., течение АГ без четких кризов. Принимает медикаментозную терапию: лозартан 50 мг утрои и 25 мг вечером, гидрохлортиазид 12,5 мг. Около 3х лет беспокоят боли ангинозного характера, возникающие при психоэмоциональном напряжении, приступообразного характера купируются в покое после приема валосердина. В поликлинике по месту жительства не наблюдается. Сегодня 18.02.23[АДРЕС], не купировались приемом валосердина. Родственниками вызвана БСМП, догоспитально - в/в доступ. Доставлен в ПО ТКНЦ с диагнозом: Нестабильная стенокардия. В ПО ТКНЦ сохраняется остаточный дискомфорт за грудиной, Тропонин I 30.5 нг/л, в динамике через час - Тропонин I 86,6 нг/л. На уровне приемного отделения проведено лечение: Брилинта 180 мг, Ацетилсалициловая кислота 250 мг, Нитроглицерин 3 мг в\\в кап. Совместно обсужден с дежурным реаниматологом [ВРАЧ] Госпитализирован в группу реанимации и интенсивной терапии КО №1 (ГРиИТ) по экстренным показаниям на каталке. Течение болезни: проведена перв КАГАнгиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет.",
+    "created": 1792867988,
+    "updated": 1792867988,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "4f312939a83e45778b1559dea9cbd7f0",
+        "history_id": "51914a0b0af440228b85d523c9e472c6",
+        "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+        "document_name": "4.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 99,
+        "end": 262,
+        "text": "Артериальная гипертония с максимальными цифрами АД 180/100 мм рт.ст., удовлетоворительно себя чувствует при АД 120-130/80 мм рт.ст., течение АГ без четких кризов. ",
+        "result": true,
+        "created": 1792876532,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "d2c7628323bd4659a5e9bd6bbf7dbb44",
+    "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+    "document_name": "4.docx",
+    "title": "Анамнез",
+    "text": "Диагноз ИБС манифестирован ОИМ 18.02.2023г в связи с чем получал стацлечение на базе ТКНЦ, проведена КАГ 19.02.2023. Тактика ведения консервативная. Артериальная гипертония втечение длительного времени с максимальными цифрами АД 180/100 мм рт.ст. Учитывая ИМ, высокий реабилитационный потенциал, по результатам ТШХ 400 метров, что соответствует 3 баллам по ШРМ. Определены показания к 3 этапу кардиореабилитации \"Перенесённые заболевания: В анамнезе: язвенная болезнь желудка. Наблюдается у уролога, принимает фокусин. Боли в левом плечевом суставе около 2 лет,обследовался, получал лечение с (инъекции в сустав) документов на момент осмотра не представлено, травмы сустава отрицает Вредные привычки: курит более 20 сигарет в сутки, стаж курения более 30 лет. не курит в течение 9 дней.. Наследственный анамнез: отягощен в отношении ибс по материнской линии (у матери имплантирован экс).Другие факторы риска: артериальная гипертония; возраст; дислипидемия; мужской пол; стрессы;ФЛЮОРОГРАФИЯ: Органы грудной клетки без патологии (со слов пациента) от февраля 2023 [АДРЕС], см: 170. Вес, кг: 81. ИМТ: 28,03. ЭКСПЕРТНЫЙ АНАМНЕЗ: Первичный ЭЛН с даты 18.02.2023. Последний ЭЛН № [ИНН] с даты 18.02.2023 по 27.02.2023, открытый. Общее количество дней нетрудоспособности (на день госпитализации) 11 дней.\"",
+    "created": 1792868005,
+    "updated": 1792868005,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "1c2a0b6077c3459cb68134ea97ba9d9b",
+        "history_id": "d2c7628323bd4659a5e9bd6bbf7dbb44",
+        "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+        "document_name": "4.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 149,
+        "end": 246,
+        "text": "Артериальная гипертония втечение длительного времени с максимальными цифрами АД 180/100 мм рт.ст.",
+        "result": true,
+        "created": 1792876546,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "1f4f64e22f964803b564de013903deb4",
+    "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+    "document_name": "4.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировала инфарктом миокарда без подъема сегмента ST тип 2 (без зубца Q) нижней локализации левого желудочка от 18.02.2023 [АДРЕС]180/100 мм рт.ст., удовлетоворительно себя чувствует при АД 120-130/80 мм рт.ст., течение АГ без четких кризов. Принимает медикаментозную терапию: брилинта 90 мг, амлодипи 5 мг, периндоприл 4 мг, аторвастатин 80мг, тромбитал 100 мг. Рекомендованные нитраты (кардикет 20 мг) не принимает. Ухудшение с 15:00 10.03.2023г, когда в покое возникла давящая боль за грудиной с иррадиацией в левую руку. Самостоятельно принял нитроспрей 1 доза с положительным эффектом, боли полностью купировались. В 17:00 10.03.2023г повторный приступ давящих болей, самостоятельно вновь нитроспрей 1 доза – с положительным эффектом. По совету жены, вызвал БСМП, догоспитально в/в доступ. С купированным болевым синдромом по экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема ST.",
+    "created": 1792868026,
+    "updated": 1792868026,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "c2ccf408292941a89746d9083e5b6fa6",
+        "history_id": "1f4f64e22f964803b564de013903deb4",
+        "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+        "document_name": "4.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 140,
+        "end": 251,
+        "text": "180/100 мм рт.ст., удовлетоворительно себя чувствует при АД 120-130/80 мм рт.ст., течение АГ без четких кризов.",
+        "result": true,
+        "created": 1792876579,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "308bd486c946482186e4a686ba62a0f2",
+    "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+    "document_name": "4.docx",
+    "title": "Анамнез",
+    "text": "ИБС манифестировала инфарктом миокарда нижней локализации от 18.02.2023 [АДРЕС]: ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Выписан с рекомендациями на амбулаторный этап в удовлетворительном состоянии. 30.08.2023 [АДРЕС], ОКС исключен, отпущен с рекомендациями на амбулаторный этап. Гипертоническая болезнь длительное время с максимальными цифрами повышения АД до 180/... мм рт. ст., в настоящее время адаптирован к 90-110/60-70 мм рт. ст., течение безкризовое. ОНМК в анамнезе отрицает. Регулярно принимает препараты: брилинта 90 мг 2 раза в сутки, кардиомагнил 75 мг 1 раз в сутки, периндоприл 2 мг 1 раз в сутки, аторвастатин 80 мг 1 раз в сутки,1 таб. изосорбида мононитрат 20 мг 1 раз в сутки, амлодипин 5 мг 1 раз в сутки. Настоящее ухудшение 06.11.2023 [АДРЕС], через 5 минут появилась жгучая боль за грудиной, без иррадиации, самостоятельно принял нитроспрей - без эффекта, при смене положения тела в вертикальное положение болевой синдром купировался. Догоспитально оказана помощь: внутривенный доступ. По экстренным показаниям доставлен в приемное отделение ТКНЦ с диагнозом: ОКС без подъема сегмента ST.",
+    "created": 1792868072,
+    "updated": 1792868072,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "ad097749bf4e47528997312d88cd58e4",
+        "history_id": "308bd486c946482186e4a686ba62a0f2",
+        "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+        "document_name": "4.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 340,
+        "end": 518,
+        "text": "Гипертоническая болезнь длительное время с максимальными цифрами повышения АД до 180/... мм рт. ст., в настоящее время адаптирован к 90-110/60-70 мм рт. ст., течение безкризовое.",
+        "result": true,
+        "created": 1792876607,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "70f77616f4a14ca9b51b8c2108435464",
+    "document_id": "86baae3ba9db4d63bd2609085d3ae320",
+    "document_name": "4.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировал инфарктом миокарда без подъема сегмента ST тип 2 (без зубца Q) нижней локализации левого желудочка от 18.02.2023 [АДРЕС]ельного времени. Максимальные цифры АД до 200/... мм рт.ст. Адаптирован к АД 120-130/80 мм рт.ст. Регулярно принимает препараты: брилинта 90мг - отменена (приём год); ацетилсалициловая к-та - временно отменена в виду ЖКК; аторвастатин 80мг; амлодипин 5мг 1/2 табл.; периндоприл 5мг 1/2 табл.",
+    "created": 1792868101,
+    "updated": 1792999485,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f41a4d93ee58490aa6131d4575ef605a",
+    "document_id": "380f878e8cb143ac8bc6f447f6943c36",
+    "document_name": "5.docx",
+    "title": "Анамнез",
+    "text": "ИБС,АГ.ИМ, нарушение ритма сердечной деятельности, нарушение мозгового крообращения отрицает. Ухудшение состояния 19.02.2023 [АДРЕС],появилась выраженная слабость вызвал БСМП.На догоспитальном этапе проведена терапия : Нитроспрей 2 доза п/я, зилт 300 мг, Аспирин 250 мг, Морфин 10 мг в/в, Нитроглицерин 10 мг в/в кап. метализе 2000 ед. Доставлен в приемное отделение ТКНЦ, госпитализирован в ГРиИТ Течение болезни: проведена перв КАГ Однососудистое гемодинамически значимое стенотическое поражение ОА. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ОА.",
+    "created": 1792867841,
+    "updated": 1792867868,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "28f5bfe597414c2ebc975d4d928f9a01",
+        "history_id": "f41a4d93ee58490aa6131d4575ef605a",
+        "document_id": "380f878e8cb143ac8bc6f447f6943c36",
+        "document_name": "5.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 93,
+        "text": "ИБС,АГ.ИМ, нарушение ритма сердечной деятельности, нарушение мозгового крообращения отрицает.",
+        "result": false,
+        "created": 1792876481,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f77bae5da98949a1b199299b9c0e349c",
+    "document_id": "380f878e8cb143ac8bc6f447f6943c36",
+    "document_name": "5.docx",
+    "title": "Анамнез",
+    "text": "АГ, НРС в анамнезе отрицает. 19.02.2023г в 18.00, когда после посещения бани впервые возникли интенсивные давящие боли в грудной клетке, области левого плеча, появилась выраженная слабость. Вызвал БСМП, по ЭКГ зарегистрированы нарушения процессов реполяризации нижней стенки ЛЖ. На догоспитальном этапе оказана помощь: Нитроспрей 2 дозы сублингвально, зилт 300 мг №1, аспирин 250 мг №1, морфин 10 мг в/в, нитроглицерин 10 мг в/в кап, метализе 2000 ед. Доставлен в приемное отделение ТКНЦ, госпитализирован в ГРиИТ. Выполнена КАГ - Однососудистое гемодинамически значимое стенотическое поражение ОА. Принимая во внимание клиникоанамнестические данные, показана и выполнена ТБКА ОА. Выписан в удовлетворительном состоянии. В настоящее время принимает клопидогрел 75 мг, АСК 100 мг, аторвастатин 80 мг, зокардис 7,5 мг по 1/4 мг, верошпирон 25 мг, бисопролол 5 мг от 1/4",
+    "created": 1792867875,
+    "updated": 1792867875,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "cfa2024b44e14daf948c3eb5f6bacd7e",
+        "history_id": "f77bae5da98949a1b199299b9c0e349c",
+        "document_id": "380f878e8cb143ac8bc6f447f6943c36",
+        "document_name": "5.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 0,
+        "end": 28,
+        "text": "АГ, НРС в анамнезе отрицает.",
+        "result": false,
+        "created": 1792876489,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "7f4f3f3a470742a69168df5926f84770",
+    "document_id": "380f878e8cb143ac8bc6f447f6943c36",
+    "document_name": "5.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировала инфарктом миокарда с подъемом сегмента ST (с з. Q) нижне-боковой стенки левого желудочка, тип 1, от 19.02.2023[АДРЕС], ТБКА со сторнированием передней межжелудочковой артерии (имплантирован 1 стент Synergy) от 19.02.2023[АДРЕС]",
+    "created": 1792867927,
+    "updated": 1792999469,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "6a2fa73ba84c40fd8616b3f2d5743b5b",
+    "document_id": "e9f0e940bf024a36bda6e516551ffeea",
+    "document_name": "6.docx",
+    "title": "Анамнез",
+    "text": "Течение болезни: поступил 21.02.2023 с жалобами на давящую боль и чувство жжения за грудиной с иррадиацией в левую руку, возникающие при ускорении темпа ходьбы и подъеме на 3й этаж, сопровождающиеся затруднением дыхания, купирующиеся в покое в течение 2-3х минут; частое повышение АД до 160/... мм.рт.ст. ИБС и артериальную гипертонию ранее в анамнезе отрицает. Коронароангиография ранее не проводилась. Артериальная гипертония в течение 3х месяцев. Максимальные цифры АД 200/100 мм.рт.ст (чаще повышение до 160/90 мм.рт.ст). Адаптирован к АД 110/80 мм.рт.ст. Ухудшение самочувствия отмечает в течение 3х месяцев: во время участия в СВО появились выше перечисленные жалобы, пациент обратился в военный полевой госпиталь - рекомендован прием конкора 5 мг и панангина. По возвращении домой в отпуск, обратился в поликлинику по месту жительства и был направлен в МКДЦ: при обследовании выявлена положительная проба стресс-ЭхоКГ и неравномерное сужение просвета ПНА более 75% по данным МСКТ. Рекомендовано проведение коронароангиографии в плановом порядке. В настоящее время постоянно принимает аторвастатин 40 мг; тромбитал 75 мг; бисопролол 5 мг; периндоприл 4 мг 2 р/[АДРЕС]значимое окклюзионное поражение ПМЖА 27.02.2023ОПЕРАЦИЯ ТРАНСЛЮМИНАЛЬНАЯ БАЛЛОННАЯ КОРОНАРНАЯ АНГИОПЛАСТИКА, СТЕНТИРОВАНИЕ С ПРЕДИЛЯТАЦИЕЙ ПМЖВ., В послеоперационном периоде отмечается дискомфорт в грудной клетки . головная боль. За период наблюдения в отделении отмечается положительная динамика , гемодинамка стабильная, ангинозные боли не рецидивировали, проводилась терапия согласно существующим стандартам и клиническим рекомендациям по ведению пацентов с ОКС без подьема сегмента ST. В послеоперационном периоде ангинозные боли не рецидивировали.",
+    "created": 1792867524,
+    "updated": 1792867524,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "0945f089e200446aa10a9b8c53d1139d",
+        "history_id": "6a2fa73ba84c40fd8616b3f2d5743b5b",
+        "document_id": "e9f0e940bf024a36bda6e516551ffeea",
+        "document_name": "6.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 263,
+        "end": 362,
+        "text": " частое повышение АД до 160/... мм.рт.ст. ИБС и артериальную гипертонию ранее в анамнезе отрицает. ",
+        "result": false,
+        "created": 1792876420,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "f7b3fa5acb8f44faaec2cd82c978123f",
+    "document_id": "e9f0e940bf024a36bda6e516551ffeea",
+    "document_name": "6.docx",
+    "title": "Анамнез",
+    "text": "Повышение артериального давления в течение года. Максимальные цифры АД 200/100 мм.рт.ст (чаще повышение до 160/90 мм.рт.ст). Адаптирован к АД 110/80 мм.рт.ст. ИБС манифестировал с ИМ без подъема сегмента ST от 27.02.2023[АДРЕС], во время участия в СВО появились выше перечисленные жалобы, пациент обратился в военный полевой госпиталь - рекомендован прием конкора 5 мг и панангина. По возвращении домой в отпуск обратился в поликлинику, при обследовании выявлена положительная проба стресс-ЭхоКГ и неравномерное сужение просвета ПНА более 75% по данным МСКТ. Рекомендовано проведение коронароангиографии в плановом порядке. С 21.02.2023 по 06.03.2023 получал лечение в условиях ТНКЦ, выполнена КАГ от 22.02.2023-ПМЖА окклюзия. В последующем выполнена ТБКА со стентированием ПМЖА от 27.02.2023. В дальнейшем отмечал улучшение, физически не перегружался. В течение месяца при выполнении физической работы, начал отмечать сталость, давящую боль в груди, при усиленной физической нагрузки (колка дров), продолжительностью до 2-5минут, купируется покоем, при перепаде погоде слабость, головная боль, одышка при работе на даче. По данным Стресс-ЭхоКГ от 01.09.2023-Проба положительная. Исходно гипокинезия миокарда апикально-боковых сегментов ЛЖ. На высоте новых зон асинергии ЛЖ не выявлено. ЭхоКГ от 01.09.2023-Размеры полостей не изменены. Незначительная гипертрофия миокарда МЖП. Дисфункция атриовентрикулярных клапанов, гемодинамически незначимая. Гипокинезия миокарда передне-апикальных сегментов ЛЖ. Глобальная сократительная функция ЛЖ удовлетворительная. По ЭКГ от 05.10.2023-ритм синусовый ЧСС 57уд в минуту. С учетом клиники, анамнеза, результатов ЭхоКГ, нагрузочной пробы рекомендовано проведение КАГ.",
+    "created": 1792867625,
+    "updated": 1792999440,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "2fed61e24f9740e6beb97905913d39f3",
+    "document_id": "e9f0e940bf024a36bda6e516551ffeea",
+    "document_name": "6.docx",
+    "title": "Анамнез",
+    "text": "Клинические проявления ИБС в рамках стенокардии напряжения ФК II с октября 2022г, во время участия в СВО появились выше перечисленные жалобы, пациент обратился в военный полевой госпиталь - рекомендован прием конкора 5 мг и панангина. По возвращении домой в отпуск, обратился в поликлинику по месту жительства, при обследовании выявлена положительная проба стресс-ЭхоКГ и неравномерное сужение просвета ПНА более 75% по данным МСКТ. Показана и выполнена 27.02.2023г ТБКА со стентированием ПМЖВ (2 стента-Synergy; Xience Alpine), во время выполнения операции выраженный болевой синдром, в послеоперационном периоде выставлен Дз: ИБС. Инфаркт миокарда без подъема с.ST (без з.Q) передней стенки ЛЖ, 4а типа от 27.02.2023[АДРЕС], клинические проявления ИБС в рамках стенокардии ФК II. 01.09.2023г- размеры полостей не изменены, незначительная гипертрофия миокарда МЖП, дисфункция атриовентрикулярных клапанов, гемодинамически незначимая; гипокинезия миокарда передне-апикальных сегментов ЛЖ размер асинергиии 15%, ФВ 61%. Стресс-ЭхоКГ от 01.09.2023- проба положительная, исходно гипокинезия миокарда апикально-боковых сегментов ЛЖ; на высоте новых зон асинергии ЛЖ не выявлено. С учетом клинико-анамнестических данных и результатов обследования проведена плановая КАГ 31.10.2023. Заключение: Ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Данных за рестеноз в стенте ПМЖА нет. Рекомендована консервативная тактика ведения. Учитывая ИБС, ПИКС, cостояние после ТБКА со стентированием, высокий реабилитационный потенциал, по результату ТШХ 435 метров, что соответствует 2 баллам по ШРМ. Определены показания к 3 этапу кардиореабилитации. На службе в СВО получил ушиб пулевой в грудную клетку Течение болезни: Пупочная грыжа",
+    "created": 1792867707,
+    "updated": 1792999446,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "ea83168c074f419683d5c4c595c6350b",
+    "document_id": "e9f0e940bf024a36bda6e516551ffeea",
+    "document_name": "6.docx",
+    "title": "Анамнез",
+    "text": "Клинические проявления ИБС в рамках стенокардии напряжения ФК II с октября 2022г, во время участия в СВО появились выше перечисленные жалобы, пациент обратился в военный полевой госпиталь - рекомендован прием конкора 5 мг и панангина. По возвращении домой в отпуск, обратился в поликлинику по месту жительства и был направлен в МКДЦ: при обследовании выявлена положительная проба стресс-ЭхоКГ и неравномерное сужение просвета ПНА более 75% по данным МСКТ. Рекомендовано проведение коронароангиографии в плановом порядке. . В С 21.02.2023 по 06.03.2023 получал лечение в условиях ТНКЦ, выполнена КАГ от 22.02.2023 (ПМЖВ прокс. сегм окклюзия тип стеноза С, более 3 мес, ОА прокс. сегм неровн. конт., первая ВТК неровность контуров)- однососудистое гемодинамически значимое окклюзионное поражение ПМЖА. 27.02.2023г выполнена ТБКА со стентированием ПМЖВ (2 стента-Synergy; Xience Alpine)- во время выполнения операции выраженный болевой синдром, в послеоперационном периоде выставлен Дз. ИБС. Инфаркт миокарда без подъема с.ST (без з.Q) передней стенки ЛЖ, 4а типа от 27.02.2023[АДРЕС], клинические проявления ИБС в рамках стенокардии ФК II. Ухудшение самочувствия в течение нескольких месяцев в виде снижения толерантности к физическим нагрузкам, стал отмечать боли жгучего характера за грудиной при умеренной физической нагрузке, купирующиеся самостоятельно в покое. Амбулаторно на базе ТКЦ выполнено ЭхоКГ от 01.09.2023- размеры полостей не изменены, незначительная гипертрофия миокарда МЖП, дисфункция атриовентрикулярных клапанов, гемодинамически незначимая; гипокинезия миокарда передне-апикальных сегментов ЛЖ размер асинергиии 15%, ФВ 61%. Стресс-ЭхоКГ от 01.09.2023- проба положительная, исходно гипокинезия миокарда апикально-боковых сегментов ЛЖ; на высоте новых зон асинергии ЛЖ не выявлено. С учетом клинико-анамнестических данных и результатов обследования - рекомендовано проведение КАГ. 31.01.2023г выполнена КАГ - Ангиографических данных за гемодинамически значимое стенотическое поражение коронарных артерий нет. Данных за рестеноз в стенте ПМЖА нет. Артериальная гипертония в течение года с максимальными цифрами АД 200/100 мм рт.ст (чаще повышение до 160/90 мм рт.ст., неоднократно, удовлетворительное самочувствие отмечает при АД 110-120/80 мм рт.ст., течение без четких кризов, малосимптомное. ОНМК отрицает. ПИКС от27.02.2023[АДРЕС]",
+    "created": 1792867807,
+    "updated": 1792867807,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "1fea94519af3443e8d3df3c7e7ea80e2",
+        "history_id": "ea83168c074f419683d5c4c595c6350b",
+        "document_id": "e9f0e940bf024a36bda6e516551ffeea",
+        "document_name": "6.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 2065,
+        "end": 2312,
+        "text": "Артериальная гипертония в течение года с максимальными цифрами АД 200/100 мм рт.ст (чаще повышение до 160/90 мм рт.ст., неоднократно, удовлетворительное самочувствие отмечает при АД 110-120/80 мм рт.ст., течение без четких кризов, малосимптомное. ",
+        "result": true,
+        "created": 1792876458,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": true,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "71ca2bd01897437eb4186b38e8f6bea6",
+    "document_id": "85a944a369cf4cb2a1bce4afcf17d503",
+    "document_name": "7.docx",
+    "title": "Анамнез",
+    "text": "В 2015[АДРЕС]015[АДРЕС][АДРЕС], лозартан 50мг, гипотиазид 12,5мг, аск 75мг, аторвастатин 80мг. 22.09.2021 пациенту рекомендовано проведение КАГ и РЧА зоны ЖЭС, от проведения которых пациент отказался. В течении года прекратил прием препаратов. Ухудшение с 24.02.2023 когда на фоне повышенного давления 170/90 мм.рт.ст. возникла давящая боль за грудиной с иррадиацией в левую руку, за мед. помощью не обращался. Болевой синдром полностью не проходил, 25.02.2023. вызвал БСМП . Оказана помощь: нитроглицерин в\\в. Доставлен в приемное отделение ТКНЦ с диагнозом ОКС без подъема с. ST. Ввиду наличия изменений по экг в виде элевации ST,и повышенного уровня Тропонина I -3630нг/л. пациент госпитализирован в ГРиИТ Течение болезни: проведена перв КАГ и ТБКА со стентированием",
+    "created": 1792867383,
+    "updated": 1792999418,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "62c609538b2149d693f628617a05a930",
+    "document_id": "85a944a369cf4cb2a1bce4afcf17d503",
+    "document_name": "7.docx",
+    "title": "Анамнез",
+    "text": "ИБС с 2015 года, когда по СМ-ЭКГ выявлена частая ЖЭ, обследован, проведена КАГ, выявлено однососудистое гемодинамически значимое поражение ПМЖВ, выполнена ТБКА ПМЖВ, в 2021 году рекомендовано проведение РЧА ЖЭ, от проведения пациент отказался, в течение года прекратил прием препаратов, 24.02.2023 на фоне повышение АД до 190/90 мм.рт.ст. возникли боли за грудиной, доставлен в ТКЦ с диагнозом ОКС, выполнена КАГ, выявлен рестеноз в стенте ПМЖВ. Брилинта 90 мг 2р/день, аторвастатин 80 мг , амиодарон 100 мг , периндоприл 2 мг , аспирин -кардио 100 мг, бисопролол 2,5 мг , омепразол 20 мг 2р/день, после лечения в ТКЦ направлен на реабидитацию в с Тараскуль. по данным СМ-ЭКГ зарегистрировано 19500 ЖЭ, ЭХОКГ ФВ 51 %. Направлен на плановый прием, КАГ осмотрена ангиохирургами проведение ТБКА ОА не показано.",
+    "created": 1792867472,
+    "updated": 1792999421,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "5750a01a0a5744b4896c58645afbffeb",
+    "document_id": "b5e7d14f115c4dc085fa118d083f289d",
+    "document_name": "8.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не выставлялся. Инфаркт миокарда отрицает. Повышение цифр АД не отмечает. Регулярно лекарственные препараты не принимает. Ухудшение с 25.02.2023, когда в покое возникла жгучая боль за грудиной, проходящая в покое. 27.02.2023 в 18:00 рецидив ангинозных болей: в покое возникла жгучая боль за грудиной без иррадиации, возникло ощущение «кома» в горле, онемение левой руки. Самостоятельно принял аспирин 500мг. В связи с сохраняющимся болевым синдромом,вызвал БСМП, врач[ВРАЧ]: нитроглицерин 10 мл на 250 мл физиологического раствора, морфин 10мг/мл – 1 мл на 20 мл физиологического раствора в/в медленно – в динамике отмечает уменьшение болевого синдрома. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема сегмента ST.",
+    "created": 1792866900,
+    "updated": 1792866900,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "c26e00c621924c8c9fc8e0d770a9650a",
+        "history_id": "5750a01a0a5744b4896c58645afbffeb",
+        "document_id": "b5e7d14f115c4dc085fa118d083f289d",
+        "document_name": "8.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 53,
+        "end": 83,
+        "text": "Повышение цифр АД не отмечает.",
+        "result": false,
+        "created": 1792876375,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "d79fa5afc1284d4d8410ee5247c8bbac",
+    "document_id": "b5e7d14f115c4dc085fa118d083f289d",
+    "document_name": "8.docx",
+    "title": "Анамнез",
+    "text": "ИБС, инфаркты, нарушение ритма сердечной деятельности, нарушение мозгового кровообращения отрицает. Повышение цифр АД отрицает, контролирует регулярно, лекарственную терапию не получает. Ухудшение состояния 23.02.2023 г - получил травму на производстве (растяжение мыщц задней поверхности берда, ушиб мягких тканей правого плечевого сустава - за медицинской помощью не обращался), 24.02.2023 [АДРЕС], купировались самостоятельно. 25.02.2023 [АДРЕС], открыт первичный лист нетрудоспособности по факту получения травмы, даны рекомендации, получал рекомендованное лечение. 27.02.2023 г в 18:00 в покое вновь рецидивировали давящие жгучие боли за грудиной, зарегистрировал повышенные цифры АД до 165\\... мм рт.ст. самостоятельно принял Аспирин 500 мг. Высвал СМП. ПДогоспитально оказана помощь: Нитроглицерин 10 мг в/в кап., Морфин 10 мг в/в. Доставлен в приеное отделение ТКНЦ с диагнозон ОКС без подьема сегмента ST. На уровне приемного отделения в ходе обследования выявлены положительные маркеры повреждения миокарда, проведено лечение: Брилинта 180 мг, Аспирин 250 мг. Госпитализирован в ГРиИТ.",
+    "created": 1792866960,
+    "updated": 1792866960,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "fb808ce70251487ca07273e4307aef89",
+        "history_id": "d79fa5afc1284d4d8410ee5247c8bbac",
+        "document_id": "b5e7d14f115c4dc085fa118d083f289d",
+        "document_name": "8.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 100,
+        "end": 186,
+        "text": "Повышение цифр АД отрицает, контролирует регулярно, лекарственную терапию не получает.",
+        "result": false,
+        "created": 1792876393,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "8a33eb862945424f9a890a5ec1aaa9ee",
+    "document_id": "b5e7d14f115c4dc085fa118d083f289d",
+    "document_name": "8.docx",
+    "title": "Анамнез",
+    "text": "Считает себя больным с 23.02, когда получил травму правой ноги, появилась обширная гематома, 27.02 в покое появились боли (\"запекло\") за грудиной, поднялось АД до 160/100, вызвад СП, доставлен в ТКНЦ с ОКС, КОРОНАРОАНГИОГРАФИЯ от 28.02.2023: Тип кровоснабжения: правый. ПКА средний сегмент - Субтотальный стеноз.   ПМЖА проксимальный сегмент - Неровность контуров.   ПМЖА средний сегмент - 30%.   ПМЖА средний сегмент - 30%.   ПМЖА верхушечный сегмент - Неровность контуров.   Первая диагональная ветвь - 60%.  Артерия малого диаметра;  ОА проксимальный сегмент - Неровность контуров.   ОА дистальный сегмент - 30%.  Артерия малого диаметра;   Заключение: Однососудистое гемодинамически значимое стенотическое поражение ПКА. Показана и выпалнена ТБКА ПКА.. Пришел на прием через 2месяца после ИМ, эхо-КГ. ЭКГ-без динамики. ХМ ЭКГ- редкая экстрасистолия, ишемических изменений, нарушений проводимости нет",
+    "created": 1792866985,
+    "updated": 1792999395,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "bc0668acbbae4b719c657d61205646d4",
+    "document_id": "d9af292df62446c0815de21db6d5f981",
+    "document_name": "9.docx",
+    "title": "Анамнез",
+    "text": "ИБC ранее не выставлялся. Инфаркт миокарда отрицает. Артериальная гипертония ранее не верифицирована. Адаптирован к АД 120/80 мм рт.ст. Регулярно принимает препараты: розувастатин 20мг. Ухудшение с 12.03.2023г, когда стали беспокоить давящие боли за грудиной после физической нагрузки, купировались в покое. С 13.03.2023г улучшения не отмечал, беспокоили периодические боли за грудиной, снижение толерантности к физическим нагрузкам. 15.03.2023г обратился за медицинской помощью в «первую кардиоклинику», осмотрен кардиологом, установлен СМ-ЭКГ – на фоне нагрузок косонисходящие депрессии ST, по дневниковым записям «сдавливание в груди». 16.03.2023г обратился на повторный приём в «первую кардиоклинику», к кардиологу. Вызвали БСМП. По экстренным показаниям доставлен в приёмное отделение ТКНЦ, с диагнозом: ОКС без подъема ST Госпитализирован в ГРИИТ . Течение болезни: проведена пенрв КАГ , Пограничное поражение ПМЖА. Предпочтительна консервативная тактика ведения.",
+    "created": 1792866853,
+    "updated": 1792866853,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [
+      {
+        "id": "7903184ea5104a58aaf61e5696aae583",
+        "history_id": "bc0668acbbae4b719c657d61205646d4",
+        "document_id": "d9af292df62446c0815de21db6d5f981",
+        "document_name": "9.docx",
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "label": "ARTERIAL_HYPERTENSION_FIX",
+        "label_name": "Артериальная гипертония",
+        "color": "#b7dce5",
+        "data_type": "bool",
+        "start": 53,
+        "end": 101,
+        "text": "Артериальная гипертония ранее не верифицирована.",
+        "result": false,
+        "created": 1792876361,
+        "result_state": "value"
+      }
+    ],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": false,
+        "state": "value"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  },
+  {
+    "id": "756c161a42ca45758464880499c7e90a",
+    "document_id": "d9af292df62446c0815de21db6d5f981",
+    "document_name": "9.docx",
+    "title": "Анамнез",
+    "text": "ИБC манифестировал инфарктом миокарда без подъема сегмента ST (без зубца Q) 2 типа переднеперегородочной локализации от 16.03.2023 [АДРЕС]теноза: C; Устьевое поражение; Дополнительная первая диагональная - 60%. Бифуркация; Заключение: Пограничное поражение ПМЖА. Предпочтительна консервативная тактика ведения. 19.11.2023г прогрессирующая стенокардия, экстренная госпитализация в ОКБ №24 КО [АДРЕС]ована. Адаптирован к АД 110-120/80 мм рт.ст. Регулярно принимает препараты: ксарелто 20мг; клопидогрел 75мг; аторвастатин 80мг",
+    "created": 1792866882,
+    "updated": 1792999382,
+    "workflow_status": "done",
+    "document_status": "in_progress",
+    "completed": 1,
+    "annotations": [],
+    "columns": [
+      {
+        "label_id": "4c83b6c843244e86889f32fd857e4c93",
+        "code": "ARTERIAL_HYPERTENSION",
+        "name": "Артериальная гипертония",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "bc128f57b1644664928607ad1c82917a",
+        "code": "ARTERIAL_HYPERTENSION_FIX",
+        "name": "Артериальная гипертония",
+        "data_type": "bool",
+        "active": true,
+        "value": null,
+        "state": "no_data"
+      },
+      {
+        "label_id": "5a3ba93a5a3249c3bb66ac90796f25f9",
+        "code": "COVID19",
+        "name": "Covid19_анамнез",
+        "data_type": "bool",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      },
+      {
+        "label_id": "4b02f1d068534465ae09ad663dbcd7d2",
+        "code": "SMOKING_MENTION",
+        "name": "Курение",
+        "data_type": "enum",
+        "active": false,
+        "value": null,
+        "state": "unreviewed"
+      }
+    ],
+    "schema_revision": 12,
+    "offset_unit": "unicode_codepoint",
+    "end_exclusive": true
+  }
+]

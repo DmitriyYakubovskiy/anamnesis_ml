@@ -1,0 +1,9 @@
+# Python 3.11/3.12. Install the CUDA-specific torch wheel separately if needed.
+torch==2.8.0
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+safetensors==0.6.2
+sentencepiece==0.2.1
+scikit-learn==1.7.2
+pytest==8.4.2

@@ -1,0 +1,39 @@
+{
+  "histories": 65,
+  "documents": 21,
+  "spans": 46,
+  "split_counts": {
+    "validation": 10,
+    "test": 9,
+    "train": 46
+  },
+  "distribution": {
+    "validation": {
+      "ARTERIAL_HYPERTENSION_FIX": {
+        "false": 2,
+        "true": 5,
+        "null": 3
+      }
+    },
+    "test": {
+      "ARTERIAL_HYPERTENSION_FIX": {
+        "null": 3,
+        "true": 5,
+        "false": 1
+      }
+    },
+    "train": {
+      "ARTERIAL_HYPERTENSION_FIX": {
+        "true": 26,
+        "null": 13,
+        "false": 7
+      }
+    }
+  },
+  "source_sha256": "7ea8610c3534b1335f21ae7bd17e371f836a69690366ea57096193f7acdd2c9f",
+  "token_preflight": {
+    "rubert_max": 612,
+    "qwen_sft_max": 1181,
+    "non_token_aligned_spans": 11
+  }
+}

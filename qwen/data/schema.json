@@ -1,0 +1,12 @@
+[
+  {
+    "code": "ARTERIAL_HYPERTENSION_FIX",
+    "name": "Артериальная гипертония",
+    "data_type": "bool",
+    "values": [
+      false,
+      true,
+      null
+    ]
+  }
+]
