@@ -1,0 +1,98 @@
+{
+  "source_sha256": "7ea8610c3534b1335f21ae7bd17e371f836a69690366ea57096193f7acdd2c9f",
+  "seed": 42,
+  "backend": "hybrid",
+  "train_n": 46,
+  "validation_n": 10,
+  "test_evaluated": false,
+  "epochs": 60,
+  "results": {
+    "ARTERIAL_HYPERTENSION_FIX": {
+      "ner": {
+        "backend": "spacy",
+        "best_epoch": 44,
+        "validation": {
+          "n": 10,
+          "ner_exact_spans": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.3333333333333333,
+            "recall": 0.14285714285714285,
+            "f1": 0.2,
+            "empty_gold_and_prediction": false
+          },
+          "ner_entity_characters": {
+            "tp": 281,
+            "fp": 105,
+            "fn": 375,
+            "precision": 0.727979274611399,
+            "recall": 0.42835365853658536,
+            "f1": 0.5393474088291748,
+            "empty_gold_and_prediction": false
+          },
+          "ner_f1": 0.2,
+          "ner_precision": 0.3333333333333333,
+          "ner_recall": 0.14285714285714285,
+          "no_predicted_entities": false
+        }
+      },
+      "classifier": {
+        "backend": "tfidf",
+        "selected": {
+          "algorithm": "svm",
+          "C": 0.25
+        },
+        "validation": {
+          "n": 10,
+          "accuracy": 0.7,
+          "macro_f1": 0.6868686868686869,
+          "balanced_accuracy_present_classes": 0.6555555555555556,
+          "per_class": {
+            "false": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666,
+              "support": 2
+            },
+            "true": {
+              "precision": 0.6666666666666666,
+              "recall": 0.8,
+              "f1": 0.7272727272727272,
+              "support": 5
+            },
+            "null": {
+              "precision": 0.6666666666666666,
+              "recall": 0.6666666666666666,
+              "f1": 0.6666666666666666,
+              "support": 3
+            }
+          },
+          "confusion": {
+            "false": {
+              "false": 1,
+              "true": 1
+            },
+            "true": {
+              "true": 4,
+              "null": 1
+            },
+            "null": {
+              "true": 1,
+              "null": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "seconds": 76.19286905599984,
+  "versions": {
+    "torch": "2.8.0+cpu",
+    "transformers": "4.57.1",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "spacy": "3.8.7",
+    "scikit-learn": "1.7.2"
+  }
+}

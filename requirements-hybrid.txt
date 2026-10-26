@@ -1,0 +1,5 @@
+# CPU hybrid backend; full Transformers stack is unnecessary for this backend.
+spacy==3.8.7
+scikit-learn==1.7.2
+joblib==1.5.2
+click==8.1.8

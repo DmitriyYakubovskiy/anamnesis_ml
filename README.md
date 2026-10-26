@@ -137,6 +137,17 @@ python Lora/evaluate.py --adapter runs/qlora_v1/model --four-bit --output runs/q
 
 ## 4. NER + классификатор
 
+Добавлен вариант по приложенной статье, работающий на CPU: **spaCy NER + TF-IDF / линейный классификатор**. На текущих 46 train / 10 validation получены exact NER F1 **0.20** и classifier macro-F1 **0.687**. Это предварительный результат на validation; тест для выбора моделей не запускался.
+
+```bash
+pip install -r requirements-hybrid.txt
+python ner_classifier/train.py --backend hybrid --epochs 60 --output runs/encoder_article_v1
+python ner_classifier/evaluate.py --models runs/encoder_article_v1 --split validation --output runs/encoder_article_v1_validation
+```
+
+Предобученные веса для hybrid не скачиваются. Подробности, отчёты и команды итогового теста — в [ner_classifier/README.md](ner_classifier/README.md), описание эксперимента — в [ARTICLE_EXPERIMENT.md](ner_classifier/ARTICLE_EXPERIMENT.md).
+
+
 По умолчанию небольшой русский `cointegrated/rubert-tiny2` с поддержкой до 2048 токенов:
 
 ```bash
@@ -144,7 +155,7 @@ python ner_classifier/train.py --epochs 5 --output runs/encoder_v2
 python ner_classifier/evaluate.py --models runs/encoder_v2 --split validation --output runs/encoder_v2_validation
 ```
 
-Веса O/B/I и классов параметра по умолчанию вычисляются только по **train** (`--class-weighting balanced`) и сохраняются в `class_weights.json`. На каждой валидации считаются exact NER F1 и macro-F1 классификатора. Лучший checkpoint выбирается по максимальному соответствующему **validation F1** и восстанавливается перед сохранением. LoRA/Qwen продолжают использовать свой прежний выбор по validation loss.
+Веса O/B/I и классов параметра вычисляются только по **train** (по умолчанию NER: `sqrt`, классификатор: `balanced`; явный `--class-weighting balanced` возвращает прежние веса) и сохраняются в `class_weights.json`. На каждой валидации считаются exact NER F1 и macro-F1 классификатора. Лучший checkpoint выбирается по максимальному соответствующему **validation F1** и восстанавливается перед сохранением. LoRA/Qwen продолжают использовать свой прежний выбор по validation loss.
 
 После обучения автоматически появляются `train_diagnostic_metrics.json` / `train_diagnostic_predictions.jsonl` и `validation_best_metrics.json` / `validation_best_predictions.jsonl` для каждой задачи. В них видны предсказания лучшего checkpoint на train и validation; диагностический train F1 не является оценкой обобщения. Подробности формулы весов и метрик — в `ner_classifier/README.md`.
 

@@ -20,12 +20,15 @@ def audit_training_parts(parts):
             raise ValueError(f'Train/validation leakage in {field}')
 
 
-def class_balance(examples, label_names, task, enabled=True):
+def class_balance(examples, label_names, task, enabled=True, method=None):
     """Inverse-frequency weights N/(K_present * count), excluding ignored tokens.
 
     Only pass train examples. Absent classes get zero weight and are reported;
     they are never given fabricated observations from validation/test.
     """
+    method = method or ('balanced' if enabled else 'none')
+    if method not in {'balanced','sqrt','none'}:
+        raise ValueError('Unknown class weighting method')
     counts = Counter()
     for example in examples:
         labels = example['labels'] if task == 'ner' else [example['labels']]
@@ -40,9 +43,11 @@ def class_balance(examples, label_names, task, enabled=True):
         raise ValueError('Train data has no supervised targets')
     present = len(counts)
     weights = [total/(present*counts[i]) if counts[i] else 0.0 for i in range(len(label_names))]
-    if not enabled:
+    if method=='sqrt':
+        weights = [weight**.5 for weight in weights]
+    elif method=='none':
         weights = [1.0]*len(label_names)
-    return {'method': 'balanced_inverse_frequency' if enabled else 'none', 'source_split': 'train',
+    return {'method': {'balanced':'balanced_inverse_frequency','sqrt':'sqrt_inverse_frequency','none':'none'}[method], 'source_split': 'train',
             'ignored_label': -100, 'total_targets': total,
             'counts': {name: counts[i] for i,name in enumerate(label_names)},
             'weights': {name: weights[i] for i,name in enumerate(label_names)},
@@ -122,7 +127,22 @@ def weighted_trainer_class():
         def __init__(self,*args,class_weights,**kwargs):
             super().__init__(*args,**kwargs)
             self.class_weights = torch.tensor(class_weights,dtype=torch.float32)
+            self.best_selection_key = None
             self.model_accepts_loss_kwargs = False
+        def _determine_best_metric(self,metrics,trial):
+            name=self.args.metric_for_best_model
+            if name not in {'eval_ner_f1','eval_macro_f1'}:
+                return super()._determine_best_metric(metrics,trial)
+            primary=float(metrics[name])
+            loss=-float(metrics.get('eval_loss',float('inf')))
+            score=(primary,float(metrics.get('eval_ner_entity_token_f1',0)),loss) if name=='eval_ner_f1' else (primary,loss)
+            if self.best_selection_key is None or score>self.best_selection_key:
+                self.best_selection_key=score
+                self.state.best_metric=primary
+                self.state.best_global_step=self.state.global_step
+                return True
+            return False
+
         def compute_loss(self,model,inputs,return_outputs=False,num_items_in_batch=None):
             labels = inputs['labels']
             outputs = model(**{k:v for k,v in inputs.items() if k != 'labels'})

@@ -55,14 +55,19 @@ def train():
     p.add_argument('--revision',default='main')
     p.add_argument('--output',default=str(ROOT/'runs/encoder'))
     p.add_argument('--task',choices=['both','ner','classifier'],default='both')
-    p.add_argument('--epochs',type=float,default=5)
+    p.add_argument('--backend',choices=['transformer','hybrid'],default='transformer')
+    p.add_argument('--epochs',type=float,default=None)
     p.add_argument('--lr',type=float,default=3e-5)
     p.add_argument('--batch',type=int,default=4)
     p.add_argument('--max-length',type=int,default=2048)
     p.add_argument('--seed',type=int,default=42)
     p.add_argument('--max-steps',type=int,default=-1)
-    p.add_argument('--class-weighting',choices=['balanced','none'],default='balanced')
+    p.add_argument('--class-weighting',choices=['balanced','sqrt','none'],default=None,help='Default: sqrt for NER, balanced for classifier')
     a=p.parse_args()
+    a.epochs=a.epochs if a.epochs is not None else (60 if a.backend=='hybrid' else 5)
+    if a.backend=='hybrid':
+        from common.hybrid import train_hybrid
+        return train_hybrid(a)
     from transformers import AutoTokenizer, AutoConfig, AutoModelForTokenClassification, AutoModelForSequenceClassification, DataCollatorForTokenClassification, DataCollatorWithPadding, set_seed
     from common.encoder_training import class_balance, metric_function, summarize_predictions, argmax_logits, weighted_trainer_class, audit_training_parts
     data=Path(a.data);schema=load(data/'schema.json');parts={s:read_jsonl(data/f'{s}.jsonl') for s in ['train','validation']}
@@ -99,7 +104,8 @@ def train():
             model=cls.from_pretrained(a.model,revision=a.revision,num_labels=len(label_names),id2label=dict(enumerate(label_names)),label2id=label2id,ignore_mismatched_sizes=True)
             dest=out/code/task;dest.mkdir(parents=True)
             collator=DataCollatorForTokenClassification(tokenizer) if task=='ner' else DataCollatorWithPadding(tokenizer)
-            balance,weights=class_balance(datasets['train'],label_names,task,a.class_weighting=='balanced')
+            weighting=a.class_weighting or ('sqrt' if task=='ner' else 'balanced')
+            balance,weights=class_balance(datasets['train'],label_names,task,method=weighting)
             dump(dest/'class_weights.json',balance)
             if balance['missing_classes']:
                 print('WARNING: no train targets for classes:',balance['missing_classes'])
@@ -115,7 +121,7 @@ def train():
             trainer.train()  # load_best_model_at_end restores the validation-F1 winner.
             config={**vars(a),'task':task,'column':col,'base_commit':getattr(model.config,'_commit_hash',None),
                     'source_sha256':load(data/'manifest.json')['source_sha256'],'selection_metric':args.metric_for_best_model,
-                    'selection_split':'validation','best_validation_f1':trainer.state.best_metric,'class_balance':balance}
+                    'selection_split':'validation','best_validation_f1':trainer.state.best_metric,'best_selection_key':trainer.best_selection_key,'class_balance':balance}
             for split,prefix in [('train','train_diagnostic'),('validation','validation_best')]:
                 trainer.compute_metrics=metric_function(parts[split],offsets_by_split[split],col,task)
                 prediction=trainer.predict(datasets[split],metric_key_prefix=prefix)
@@ -143,6 +149,10 @@ def evaluate():
     p.add_argument('--split',choices=['train','validation','test'],default='validation',help='Train is diagnostic only; test is for the final comparison')
     p.add_argument('--max-length',type=int,default=2048)
     a=p.parse_args()
+    config=Path(a.models)/'run_config.json'
+    if config.exists() and load(config).get('backend')=='hybrid':
+        from common.hybrid import evaluate_hybrid
+        return evaluate_hybrid(a)
     import torch
     from transformers import AutoTokenizer,AutoModelForTokenClassification,AutoModelForSequenceClassification
     data=Path(a.data);schema=load(data/'schema.json');rows=read_jsonl(data/f'{a.split}.jsonl');out=new_output(a.output)
