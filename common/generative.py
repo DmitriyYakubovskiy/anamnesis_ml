@@ -94,10 +94,16 @@ def train(mode):
     dump(out/'model'/'schema.json',schema)
 
 
-def local_generator(model_name, revision='main', adapter=None, max_length=4096, max_new_tokens=256, four_bit=False):
+def local_generator(model_name, revision='main', adapter=None, max_length=4096, max_new_tokens=256,
+                    four_bit=False, offload_folder=None, device_map='auto'):
     import torch
     from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
-    kwargs = {'torch_dtype': precision(), 'revision': revision, 'device_map': 'auto'}
+    placement = {'': 'cpu'} if device_map == 'cpu' else device_map
+    kwargs = {'dtype': precision(), 'revision': revision, 'device_map': placement}
+    if offload_folder is not None:
+        offload_folder = str(Path(offload_folder).resolve())
+        Path(offload_folder).mkdir(parents=True, exist_ok=True)
+        kwargs.update(offload_folder=offload_folder, offload_state_dict=True)
     if adapter:
         from peft import PeftConfig
         cfg = PeftConfig.from_pretrained(adapter)
@@ -114,16 +120,26 @@ def local_generator(model_name, revision='main', adapter=None, max_length=4096, 
     model = AutoModelForCausalLM.from_pretrained(model_name, **kwargs)
     if adapter:
         from peft import PeftModel
-        model = PeftModel.from_pretrained(model, adapter)
+        # PEFT re-dispatches the wrapped model and needs the folder independently
+        # of the folder passed to the original Transformers loader.
+        model = PeftModel.from_pretrained(model, adapter, device_map=placement,
+                                          offload_folder=offload_folder)
     model.eval()
+    # A disk-offloaded first parameter may be on meta rather than the device
+    # where Accelerate executes the forward pass.
+    mapping = getattr(model, 'hf_device_map', {})
+    execution_device = next((d for d in mapping.values() if d not in {'cpu', 'disk'}), 'cpu') if mapping else model.device
+    if isinstance(execution_device, int):
+        execution_device = f'cuda:{execution_device}'
     def generate(text, schema):
-        inp = tok.apply_chat_template(messages(text,schema), tokenize=True, add_generation_prompt=True, return_tensors='pt', return_dict=True).to(model.device)
+        inp = tok.apply_chat_template(messages(text,schema), tokenize=True, add_generation_prompt=True, return_tensors='pt', return_dict=True).to(execution_device)
         if inp['input_ids'].shape[-1]+max_new_tokens > max_length:
             raise ValueError('Input plus generation budget exceeds --max-length; input was not truncated')
         with torch.inference_mode():
             output = model.generate(**inp, max_new_tokens=max_new_tokens, do_sample=False, pad_token_id=tok.pad_token_id)
         return tok.decode(output[0,inp['input_ids'].shape[-1]:],skip_special_tokens=True)
-    generate.model_info = {'base_model': model_name, 'revision': revision, 'resolved_commit': getattr(model.config, '_commit_hash', None), 'adapter': adapter}
+    generate.model_info = {'base_model': model_name, 'revision': revision, 'resolved_commit': getattr(model.config, '_commit_hash', None), 'adapter': adapter,
+                           'offload_folder': offload_folder, 'device_map': {k:str(v) for k,v in mapping.items()}}
     return generate
 
 
@@ -152,16 +168,21 @@ def evaluate(folder):
     p.add_argument('--max-length',type=int,default=4096)
     p.add_argument('--max-new-tokens',type=int,default=256)
     p.add_argument('--four-bit',action='store_true')
+    p.add_argument('--offload-folder',help='Disk offload for base weights and LoRA; default: <output>/offload')
+    p.add_argument('--device-map',choices=['auto','cpu'],default='auto',help='auto may offload to disk; cpu requires enough RAM for all weights')
     a=p.parse_args()
     if a.base_url and a.adapter:
         p.error('--adapter only applies to local Transformers; load the merged model into LM Studio instead')
+    if a.four_bit and a.device_map=='cpu':
+        p.error('--four-bit cannot be combined with --device-map cpu')
     data=Path(a.data);schema=load(data/'schema.json');rows=read_jsonl(data/f'{a.split}.jsonl')
     for candidate in [a.adapter, a.model if not a.base_url else None]:
         if candidate and (Path(candidate)/'schema.json').exists() and load(Path(candidate)/'schema.json') != schema:
             raise ValueError('Model schema differs from evaluation data')
     out=new_output(a.output)
+    offload_folder=a.offload_folder or str(out/'offload')
     with timed_phase('model_load', backend='api' if a.base_url else 'transformers'):
-        generator=api_generator(a.base_url,a.model) if a.base_url else local_generator(a.model,a.revision,a.adapter,a.max_length,a.max_new_tokens,a.four_bit)
+        generator=api_generator(a.base_url,a.model) if a.base_url else local_generator(a.model,a.revision,a.adapter,a.max_length,a.max_new_tokens,a.four_bit,offload_folder,a.device_map)
     predictions=[];started=time.perf_counter()
     with timed_phase('inference', backend='api' if a.base_url else 'transformers', samples=len(rows)):
         for r in rows:
